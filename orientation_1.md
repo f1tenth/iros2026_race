@@ -5,7 +5,7 @@ layout: page
 section: race
 ---
 <center>
-	<h2> ROBORACER IEEE <!-- CONF_WITH_YEAR -->IV 2026<!-- /CONF_WITH_YEAR --> Orientation 1 Material</h2>
+	<h2> ROBORACER IEEE <!-- CONF_WITH_YEAR -->IROS 2026<!-- /CONF_WITH_YEAR --> Orientation 1 Material</h2>
 </center>
 
 <center>

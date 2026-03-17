@@ -14,11 +14,11 @@ href="https://autodrive-ecosystem.github.io/competitions/roboracer-sim-racing-iv
 Racing Registration page</a>.
 <br>
 The following Google form is only for preliminary registration and for orientation and information
-sessions. Registration to IV 2026 is expected for all competitors.
+sessions. Registration to IROS 2026 is expected for all competitors.
 </p><!-- /REG_INFO_PARAGRAPH -->
 
 <center class="actions">
-<!-- REG_BUTTON --><a href="https://forms.gle/Dgcv3Ta1Aq354GtA7" class="button">Registration Open</a><!-- /REG_BUTTON -->
+<!-- REG_BUTTON --><a class="button" style="pointer-events: none; opacity: 0.5;">Registration Closed</a><!-- /REG_BUTTON -->
 </center>
 
 <br>
