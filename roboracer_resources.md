@@ -24,7 +24,10 @@ built in Python. This simulation runs faster than real-time execution (30x realt
 realistic vehicle simulation and collision, runs multiple vehicle instances and publishes laser scan
 and odometry data. When it comes to a more close vehicle development we provide the <a
 href="https://github.com/f1tenth/f1tenth_gym_ros">Roboracer ROS Simulator</a> which is providing
-the ROS messages from the Roboracer car in and simulation environment.</p>
+the ROS messages from the Roboracer car in and simulation environment. An updated
+f1tenth_gym_ros supporting multi-car (4-car) testing is in development for this competition; the
+currently released version supports two cars, while the underlying Roboracer Gym already supports
+multiple vehicles.</p>
 <h3>Digital Twin</h3>
 <p><span class="image right"><a href="https://youtu.be/Rq7Wwcwn1uk?feature=shared"><img
 		src="images/Roboracer/autodrive_sim_f1tenth.png" style="width: 20vw"
@@ -40,9 +43,7 @@ mixed (human vs. AI) races. It offers various <a
 href="https://github.com/Tinker-Twins/AutoDRIVE/tree/AutoDRIVE-Devkit">APIs</a> to flexibly
 develop autonomy algorithms and supports a range of <a
 href="https://youtu.be/_cwrw1w5d_g?si=GHBhRSDZh2AwvwKj">HMIs</a> to observe and interact with
-the digital twins in real-time. This simulator will be used for the <a
-href="https://autodrive-ecosystem.github.io/competitions/roboracer-sim-racing-icra-2025/">Roboracer
-Sim Racing League</a>, but you can also use it to prototype your autonomous racing algorithms
+the digital twins in real-time. You can use it to prototype your autonomous racing algorithms
 before deploying them on the physical vehicles. The best part – AutoDRIVE Simulator is completely <a
 href="https://github.com/Tinker-Twins/AutoDRIVE/tree/AutoDRIVE-Simulator">open-source</a> and
 can be customized to fit your R&D objectives beyond this competition!</p>
