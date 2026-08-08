@@ -14,40 +14,43 @@
         "conference_dates_display": "September 27 - October 1"
     },
     "dates": {
-        "race_day": "2026-10-01",
+        "race_day": "2026-09-30",
         "offsets": {
             "qualification": -1,
             "team_training": -2,
             "track_setup": -3,
-            "orientation_2": -38,
-            "registration_closes": -40,
-            "orientation_1": -66,
+            "orientation_2": -14,
+            "video_demo_due": -18,
+            "registration_closes": -25,
+            "orientation_1": -35,
             "registration_open": -113
         }
     },
     "orientation_1": {
-        "time_display": "11:00AM - 12:00PM ET",
+        "time_display": "11:00 AM - 12:00 PM ET",
+        "description": "RoboRacer Orientation 1 (competition rules overview)",
         "zoom_link": "",
         "slides_link": "",
         "video_link": ""
     },
     "orientation_2": {
-        "time_display": "11:00AM - 12:00PM ET",
+        "time_display": "11:00 AM - 12:00 PM ET",
+        "description": "RoboRacer Orientation 2 (venue walkthrough, track and surface overview, run-of-show)",
         "zoom_link": "",
         "slides_link": "",
         "video_link": ""
     },
     "registration": {
-        "status": "closed",
-        "form_link": "https://forms.gle/fGdPw2NW16E6b69c9",
+        "status": "open",
+        "form_link": "https://forms.gle/nhDytwxKEy4EpUHa6",
         "hide_participants": true
     },
     "results": {
         "time_trial_sheet_link": "",
         "bracket_link": "",
-        "youtube_stream_id": "KLOceDeegVs",
+        "youtube_stream_id": "",
         "twitch_parent_domains": [
-            "iros2026-race.f1tenth.org",
+            "iros2026-race.roboracer.ai",
             "localhost"
         ],
         "show_stream_placeholder": true,
@@ -102,6 +105,22 @@
             "title": "Ph.D. Candidate",
             "department": "Department of Automotive Engineering",
             "institution": "Clemson University - ICAR"
+        },
+        {
+            "name": "Cedric Hollande",
+            "image": "",
+            "profile_url": "",
+            "title": "Researcher",
+            "department": "Department of Electrical and Systems Engineering",
+            "institution": "University of Pennsylvania"
+        },
+        {
+            "name": "Yon Vanommeslaegh",
+            "image": "",
+            "profile_url": "",
+            "title": "Visiting Researcher",
+            "department": "Department of Electrical and Systems Engineering",
+            "institution": "University of Pennsylvania"
         }
     ]
 }

@@ -52,17 +52,17 @@ def get_default_config() -> dict:
     """Return default configuration template."""
     return {
         "event": {
-            "conference_name": "ICRA",
-            "conference_full_name": "IEEE Conference on Robotics and Automation",
-            "race_number": "25TH",
+            "conference_name": "IROS",
+            "conference_full_name": "IEEE/RSJ International Conference on Intelligent Robots and Systems",
+            "race_number": "31st",
             "year": "2026",
             "venue_name": "Venue Name",
             "location": "City, State, Country",
             "venue_url": "https://venue-website.com",
             "conference_url": "https://conference-website.com",
-            "conference_logo": "images/ICRA2026.png",
-            "contact_email": "roboracer@email.com",
-            "cname": "icra2026-race.roboracer.ai",
+            "conference_logo": "images/IROS.png",
+            "contact_email": "contact@roboracer.ai",
+            "cname": "iros2026-race.roboracer.ai",
             "conference_dates_display": "Month Day - Day",
         },
         "dates": {
@@ -71,20 +71,23 @@ def get_default_config() -> dict:
                 "qualification": -1,
                 "team_training": -2,
                 "track_setup": -3,
-                "orientation_2": -38,
-                "registration_closes": -40,
-                "orientation_1": -66,
+                "orientation_2": -14,
+                "video_demo_due": -18,
+                "registration_closes": -25,
+                "orientation_1": -35,
                 "registration_open": -113,
             },
         },
         "orientation_1": {
-            "time_display": "11:00AM - 12:00PM ET",
+            "time_display": "11:00 AM - 12:00 PM ET",
+            "description": "RoboRacer Orientation 1 (competition rules overview)",
             "zoom_link": "",
             "slides_link": "",
             "video_link": "",
         },
         "orientation_2": {
-            "time_display": "11:00AM - 12:00PM ET",
+            "time_display": "11:00 AM - 12:00 PM ET",
+            "description": "RoboRacer Orientation 2 (venue walkthrough, track and surface overview, run-of-show)",
             "zoom_link": "",
             "slides_link": "",
             "video_link": "",
@@ -129,20 +132,12 @@ def get_default_config() -> dict:
                 "institution": "Clemson University",
             },
             {
-                "name": "Radu Grosu",
-                "image": "images/organizer/Radu.png",
-                "profile_url": "https://tiss.tuwien.ac.at/person/248818.html",
-                "title": "Full Professor and Head of Research Unit",
-                "department": "Research Unit of Cyber-Physical Systems",
-                "institution": "TU Wien (Vienna University of Technology)",
-            },
-            {
-                "name": "Ezio Bartocci",
-                "image": "images/organizer/Ezio.jpg",
-                "profile_url": "https://tiss.tuwien.ac.at/person/251490.html",
-                "title": "Full Professor",
-                "department": "Research Unit of Cyber-Physical Systems",
-                "institution": "TU Wien (Vienna University of Technology)",
+                "name": "Ahmad Amine",
+                "image": "images/organizer/Ahmad.jpg",
+                "profile_url": "https://ahmadamine998.github.io/",
+                "title": "Ph.D. Candidate",
+                "department": "Department of Electrical and Systems Engineering",
+                "institution": "University of Pennsylvania",
             },
         ],
     }
@@ -783,6 +778,7 @@ class EventManagerApp:
             "team_training": "Team Training",
             "track_setup": "Track Setup",
             "orientation_2": "Orientation 2",
+            "video_demo_due": "Video Demonstration Due",
             "registration_closes": "Registration Closes",
             "orientation_1": "Orientation 1",
             "registration_open": "Registration Opens",
@@ -866,6 +862,10 @@ class EventManagerApp:
             frame, "Time (e.g., 11:00AM - 12:00PM ET):", row, o1.get("time_display", "")
         )
         row += 1
+        self.o1_description_entry = self.create_labeled_entry(
+            frame, "Timeline Description:", row, o1.get("description", "")
+        )
+        row += 1
         self.o1_zoom_entry = self.create_labeled_entry(
             frame, "Zoom Link:", row, o1.get("zoom_link", "")
         )
@@ -900,6 +900,10 @@ class EventManagerApp:
         row += 1
         self.o2_time_entry = self.create_labeled_entry(
             frame, "Time (e.g., 11:00AM - 12:00PM ET):", row, o2.get("time_display", "")
+        )
+        row += 1
+        self.o2_description_entry = self.create_labeled_entry(
+            frame, "Timeline Description:", row, o2.get("description", "")
         )
         row += 1
         self.o2_zoom_entry = self.create_labeled_entry(
@@ -1603,6 +1607,7 @@ class EventManagerApp:
             preview_text += f"Registration Opens: {format_date_display(dates['registration_open'])}\n"
             preview_text += f"Orientation 1: {format_date_display(dates['orientation_1'])}\n"
             preview_text += f"Registration Closes: {format_date_display(dates['registration_closes'])}\n"
+            preview_text += f"Video Demonstration Due: {format_date_display(dates['video_demo_due'])}\n"
             preview_text += f"Orientation 2: {format_date_display(dates['orientation_2'])}\n"
             preview_text += f"Track Setup: {format_date_display(dates['track_setup'])}\n"
             preview_text += f"Team Training: {format_date_display(dates['team_training'])}\n"
@@ -1746,12 +1751,14 @@ class EventManagerApp:
             },
             "orientation_1": {
                 "time_display": self.o1_time_entry.get().strip(),
+                "description": self.o1_description_entry.get().strip(),
                 "zoom_link": self.o1_zoom_entry.get().strip(),
                 "slides_link": self.o1_slides_entry.get().strip(),
                 "video_link": self.o1_video_entry.get().strip(),
             },
             "orientation_2": {
                 "time_display": self.o2_time_entry.get().strip(),
+                "description": self.o2_description_entry.get().strip(),
                 "zoom_link": self.o2_zoom_entry.get().strip(),
                 "slides_link": self.o2_slides_entry.get().strip(),
                 "video_link": self.o2_video_entry.get().strip(),
@@ -1981,7 +1988,11 @@ class RepositoryUpdater:
             images_html = '<div class="box alt">\n\t\t\t\t\t<div class="row gtr-50 gtr-uniform">\n'
             for org in row_organizers:
                 image = org.get("image", "")
-                images_html += f'\t\t\t\t\t\t<div class="col-2"><span class="image fit"><img src="{image}"\n\t\t\t\t\t\t\t\t\talt="" /></span></div>\n'
+                if image:
+                    images_html += f'\t\t\t\t\t\t<div class="col-2"><span class="image fit"><img src="{image}"\n\t\t\t\t\t\t\t\t\talt="" /></span></div>\n'
+                else:
+                    # No headshot on file yet - keep the column so the grid stays aligned.
+                    images_html += '\t\t\t\t\t\t<div class="col-2"></div>\n'
             images_html += '\t\t\t\t\t</div>\n\t\t\t\t</div>'
             html_parts.append(images_html)
 
@@ -1993,8 +2004,9 @@ class RepositoryUpdater:
                 title = org.get("title", "")
                 department = org.get("department", "")
                 institution = org.get("institution", "")
+                name_html = f'<a href="{profile_url}">{name}</a>' if profile_url else name
                 details_html += f'''\t\t\t\t\t\t<div class="col-2" , align="center">
-							<b><a href="{profile_url}">{name}</a></b>
+							<b>{name_html}</b>
 							<h6>{title}</h6>
 							<h6>{department}</h6>
 							<h6>{institution}</h6>
@@ -2057,97 +2069,105 @@ class RepositoryUpdater:
 
         return content
 
+    @staticmethod
+    def _orientation_row(
+        date_str: str,
+        time_str: str,
+        description: str,
+        zoom: str,
+        slides: str,
+        video: str,
+        date_class: str,
+        body_class: str,
+    ) -> str:
+        """Build one timeline orientation row, omitting links that have no URL yet."""
+        cell_style = (
+            "font-weight:400;font-style:normal;text-decoration:none;"
+            "color:#000;background-color:transparent"
+        )
+
+        label = f'<span style="font-weight:400;font-style:normal">{description}</span>'
+        if zoom:
+            label = f'<a href="{zoom}">{label}</a>'
+
+        links = []
+        if slides:
+            links.append(f'<a href="{slides}">Slides</a>')
+        if video:
+            links.append(f'<a href="{video}">Video</a>')
+        links_html = ""
+        if links:
+            links_html = f'<br>\n<span style="{cell_style}">{" ".join(links)}</span>'
+
+        return RepositoryUpdater._clean_html(f'''<tr>
+<td class="{date_class}"><span style="{cell_style}">{date_str}, {time_str}</span></td>
+<td class="{body_class}">{label}{links_html}</td>
+</tr>''')
+
     def _update_timeline_html(self, content: str) -> str:
-        """Update timeline.html using placeholder markers."""
-        race_num = self.event.get("race_number", "")
+        """Update timeline.md using placeholder markers."""
+        content = self.replace_placeholder(
+            content, "TL_RACE_NUMBER", self.event.get("race_number", "")
+        )
 
-        # Update race number placeholder
-        content = self.replace_placeholder(content, "TL_RACE_NUMBER", race_num)
-
-        # Update date cells with calculated dates
         if self.dates:
-            # Registration Opens
-            if "registration_open" in self.dates:
-                reg_open = format_date_display(self.dates["registration_open"])
-                content = self.replace_placeholder(content, "TL_REG_OPEN_DATE", reg_open)
+            # Plain date cells: marker -> key in the calculated dates
+            date_markers = {
+                "TL_REG_OPEN_DATE": "registration_open",
+                "TL_REG_CLOSE_DATE": "registration_closes",
+                "TL_VIDEO_DEMO_DATE": "video_demo_due",
+                "TL_TRACK_SETUP_DATE": "track_setup",
+                "TL_TRAINING_DATE": "team_training",
+                "TL_QUAL_DATE": "qualification",
+                "TL_RACE_DATE": "race",
+            }
+            for marker, key in date_markers.items():
+                if key in self.dates:
+                    content = self.replace_placeholder(
+                        content, marker, format_date_display(self.dates[key])
+                    )
 
-            # Orientation 1 row - full element
-            o1_date = format_date_display(self.dates.get("orientation_1", "")) if "orientation_1" in self.dates else ""
-            o1_time = self.o1.get("time_display", "")
-            o1_zoom = self.o1.get("zoom_link", "")
-            o1_slides = self.o1.get("slides_link", "")
-            o1_video = self.o1.get("video_link", "")
-            o1_row = self._clean_html(f'''<tr>
-							<td class="tg-1vzr"><span
-									style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">{o1_date}, {o1_time}</span>
-							</td>
-							<td class="tg-j1gp"><a
-									href="{o1_zoom}"><span
-										style="font-weight:inherit;font-style:inherit">Roboracer Orientation 1 (
-										Competition Rules overview )</span></a><br>
-								<span
-									style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">
-									<a
-										href="{o1_slides}">Slide</a>
-									<a
-										href="{o1_video}">Video</a></span>
-							</td>
-						</tr>''')
-            content = self.replace_placeholder(content, "TL_O1_ROW", o1_row)
+            if "orientation_1" in self.dates:
+                content = self.replace_placeholder(
+                    content,
+                    "TL_O1_ROW",
+                    self._orientation_row(
+                        format_date_display(self.dates["orientation_1"]),
+                        self.o1.get("time_display", ""),
+                        self.o1.get("description", ""),
+                        self.o1.get("zoom_link", ""),
+                        self.o1.get("slides_link", ""),
+                        self.o1.get("video_link", ""),
+                        "tg-1vzr",
+                        "tg-j1gp",
+                    ),
+                )
 
-            # Registration Closes
-            if "registration_closes" in self.dates:
-                reg_close = format_date_display(self.dates["registration_closes"])
-                content = self.replace_placeholder(content, "TL_REG_CLOSE_DATE", reg_close)
+            if "orientation_2" in self.dates:
+                content = self.replace_placeholder(
+                    content,
+                    "TL_O2_ROW",
+                    self._orientation_row(
+                        format_date_display(self.dates["orientation_2"]),
+                        self.o2.get("time_display", ""),
+                        self.o2.get("description", ""),
+                        self.o2.get("zoom_link", ""),
+                        self.o2.get("slides_link", ""),
+                        self.o2.get("video_link", ""),
+                        "tg-tbri",
+                        "tg-npj4",
+                    ),
+                )
 
-            # Orientation 2 row - full element
-            o2_date = format_date_display(self.dates.get("orientation_2", "")) if "orientation_2" in self.dates else ""
-            o2_time = self.o2.get("time_display", "")
-            o2_zoom = self.o2.get("zoom_link", "")
-            o2_slides = self.o2.get("slides_link", "")
-            o2_video = self.o2.get("video_link", "")
-            o2_row = self._clean_html(f'''<tr>
-							<td class="tg-tbri"><span
-									style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">{o2_date}, {o2_time}</span></td>
-							<td class="tg-npj4"><a
-									href="{o2_zoom}"><span
-										style="font-weight:400;font-style:normal">Roboracer Orientation 2 ( Track set
-										up, Track overview for in-person competition, Teams Training )</span></a><br>
-								<span
-									style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">
-									<a
-										href="{o2_slides}">Slide</a>
-									<a
-										href="{o2_video}">Video</a></span>
-							</td>
-						</tr>''')
-            content = self.replace_placeholder(content, "TL_O2_ROW", o2_row)
-
-            # Track Setup
-            if "track_setup" in self.dates:
-                track_setup = format_date_display(self.dates["track_setup"])
-                content = self.replace_placeholder(content, "TL_TRACK_SETUP_DATE", track_setup)
-
-            # Team Training
-            if "team_training" in self.dates:
-                training = format_date_display(self.dates["team_training"])
-                content = self.replace_placeholder(content, "TL_TRAINING_DATE", training)
-
-            # Qualification
-            if "qualification" in self.dates:
-                qual = format_date_display(self.dates["qualification"])
-                content = self.replace_placeholder(content, "TL_QUAL_DATE", qual)
-
-            # Race Day
-            if "race" in self.dates:
-                race = format_date_display(self.dates["race"])
-                content = self.replace_placeholder(content, "TL_RACE_DATE", race)
-
-        # Sim Racing timeline paragraph - full element
-        sim_timeline_url = self.sim.get("timeline_url", "")
-        sim_paragraph = self._clean_html(f'''<p>For a detailed timeline of the virtual competition, please refer to the <a
-					href="{sim_timeline_url}">virtual
-					competition website</a>. </p>''')
+        # Sim racing runs as a separate series; emit nothing when it is disabled.
+        if self.sim.get("enabled"):
+            sim_paragraph = self._clean_html(
+                f'''<p>For a detailed timeline of the virtual competition, please refer to the <a
+href="{self.sim.get("timeline_url", "")}">virtual
+competition website</a>. </p>'''
+            )
+        else:
+            sim_paragraph = ""
         content = self.replace_placeholder(content, "TL_SIM_PARAGRAPH", sim_paragraph)
 
         return content
@@ -2159,21 +2179,27 @@ class RepositoryUpdater:
         hide_participants = self.reg.get("hide_participants", False)
         contact_email = self.event.get("contact_email", "")
 
-        # Registration info paragraph - full element
-        sim_edition = self.sim.get("edition", "3rd")
-        sim_reg_url = self.sim.get("registration_url", "")
-        reg_info = self._clean_html(f'''<p>This competition is open for everyone of all levels, everyone is welcome to participate in this
-					competition.
-					A team can consist of multiple teammates. Teams with only one person are also allowed.
-					Teams that take part in the in-person competition need to provide and build an Roboracer car by
-					themselves.
-					To register in the {sim_edition} Roboracer Sim Racing League, please refer to the <a
-						href="{sim_reg_url}">Sim
-						Racing Registration page</a>.
-					<br>
-					The following Google form is only for preliminary registration and for orientation and information
-					sessions. Registration to {self.conf_with_year} is expected for all competitors.
-				</p>''')
+        # Sim racing runs as a separate series; only point at it when it is enabled.
+        if self.sim.get("enabled"):
+            sim_sentence = (
+                f'\nTo register in the {self.sim.get("edition", "3rd")} Roboracer Sim Racing League, '
+                f'please refer to the <a\nhref="{self.sim.get("registration_url", "")}">Sim\n'
+                'Racing Registration page</a>.'
+            )
+        else:
+            sim_sentence = ""
+
+        reg_info = self._clean_html(
+            f'''<p>This competition is open for everyone of all levels, everyone is welcome to participate in this
+competition.
+A team can consist of multiple teammates. Teams with only one person are also allowed.
+Teams that take part in the in-person competition need to provide and build an Roboracer car by
+themselves.{sim_sentence}
+<br>
+The following Google form is only for preliminary registration and for orientation and information
+sessions. Registration to {self.conf_with_year} is expected for all competitors.
+</p>'''
+        )
         content = self.replace_placeholder(content, "REG_INFO_PARAGRAPH", reg_info)
 
         # Update registration button based on status
