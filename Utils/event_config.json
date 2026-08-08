@@ -109,7 +109,7 @@
         {
             "name": "Cedric Hollande",
             "image": "images/organizer/cedric.jpg",
-            "profile_url": "",
+            "profile_url": "https://cedrichollande.com/",
             "title": "Researcher",
             "department": "Department of Electrical and Systems Engineering",
             "institution": "University of Pennsylvania"
@@ -117,7 +117,7 @@
         {
             "name": "Yon Vanommeslaegh",
             "image": "images/organizer/yon.jpg",
-            "profile_url": "",
+            "profile_url": "https://www.linkedin.com/in/yonvanom/",
             "title": "Visiting Researcher",
             "department": "Department of Electrical and Systems Engineering",
             "institution": "University of Pennsylvania"
