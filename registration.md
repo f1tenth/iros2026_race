@@ -9,20 +9,31 @@ competition.
 A team can consist of multiple teammates. Teams with only one person are also allowed.
 Teams that take part in the in-person competition need to provide and build an Roboracer car by
 themselves.
-To register in the 6th Roboracer Sim Racing League, please refer to the <a
-href="https://autodrive-ecosystem.github.io/competitions/roboracer-sim-racing-iv-2026/#registration">Sim
-Racing Registration page</a>.
 <br>
 The following Google form is only for preliminary registration and for orientation and information
 sessions. Registration to IROS 2026 is expected for all competitors.
 </p><!-- /REG_INFO_PARAGRAPH -->
 
 <center class="actions">
-<!-- REG_BUTTON --><a class="button" style="pointer-events: none; opacity: 0.5;">Registration Closed</a><!-- /REG_BUTTON -->
+<!-- REG_BUTTON --><a href="https://forms.gle/nhDytwxKEy4EpUHa6" class="button">Registration Open</a><!-- /REG_BUTTON -->
 </center>
 
 <br>
+
+<h3 id="deadlines">Deadlines</h3>
+
+<p>
+Registration closes on <b>September 5, 2026</b>.<br>
+The video demonstration is due on <b>September 12, 2026</b>.
+</p>
+
+<h3 id="conference-registration">Conference Registration</h3>
+
+<p>
+Competition participants receive a discounted conference registration price. More details to come.
 <br>
+Authors presenting an accepted IROS paper must purchase full conference registration instead.
+</p>
 
 <h3 id="accomodation">Accomodation</h3>
 
