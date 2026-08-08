@@ -94,188 +94,76 @@ section: timeline
 		</tr>
 	</thead>
 	<tbody>
-		<tr class="tg-1vzr">
-			<td class="tg-1vzr"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent"><!-- TL_REG_OPEN_DATE -->June 10th<!-- /TL_REG_OPEN_DATE --></span></td>
-			<td class="tg-j1gp"><span style="font-weight:400;font-style:normal"> <a>Registration Opens</a></span></td>
-		</tr>
-
 		<!-- TL_O1_ROW --><tr>
-<td class="tg-1vzr"><span
-style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">July 27th, 11:00AM - 12:00PM ET</span>
-</td>
-<td class="tg-j1gp"><a
-href=""><span
-style="font-weight:inherit;font-style:inherit">Roboracer Orientation 1 (
-Competition Rules overview )</span></a><br>
-<span
-style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">
-<a
-href="">Slide</a>
-<a
-href="">Video</a></span>
-</td>
+<td class="tg-1vzr"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">August 26th, 11:00 AM - 12:00 PM ET</span></td>
+<td class="tg-j1gp"><span style="font-weight:400;font-style:normal">RoboRacer Orientation 1 (competition rules overview)</span></td>
 </tr><!-- /TL_O1_ROW -->
 
 		<tr>
 			<td class="tg-tbri"><span
-					style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent"><!-- TL_REG_CLOSE_DATE -->August 22nd<!-- /TL_REG_CLOSE_DATE --></span></td>
-			<td class="tg-npj4"><span style="font-weight:400;font-style:normal">Registration Closes,
-					Video Demonstration Due</span>
+					style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent"><!-- TL_REG_CLOSE_DATE -->September 5th<!-- /TL_REG_CLOSE_DATE --></span></td>
+			<td class="tg-npj4"><span
+					style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">
+					Registration closes</span>
+			</td>
+		</tr>
+
+		<tr>
+			<td class="tg-1vzr"><span
+					style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent"><!-- TL_VIDEO_DEMO_DATE -->September 12th<!-- /TL_VIDEO_DEMO_DATE --></span></td>
+			<td class="tg-j1gp"><span
+					style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">
+					Video demonstration due</span>
 			</td>
 		</tr>
 
 		<!-- TL_O2_ROW --><tr>
-<td class="tg-tbri"><span
-style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">August 24th, 11:00AM - 12:00PM ET</span></td>
-<td class="tg-npj4"><a
-href=""><span
-style="font-weight:400;font-style:normal">Roboracer Orientation 2 ( Track set
-up, Track overview for in-person competition, Teams Training )</span></a><br>
-<span
-style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">
-<a
-href="">Slide</a>
-<a
-href="">Video</a></span>
-</td>
+<td class="tg-tbri"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">September 16th, 11:00 AM - 12:00 PM ET</span></td>
+<td class="tg-npj4"><span style="font-weight:400;font-style:normal">RoboRacer Orientation 2 (venue walkthrough, track and surface overview, run-of-show)</span></td>
 </tr><!-- /TL_O2_ROW -->
 
 		<tr>
+			<td class="tg-wf0h" colspan="2"><span
+					style="font-weight:bold;font-style:inherit;color:#212931">ON-SITE COMPETITION
+					(TENTATIVE)</span></td>
+		</tr>
+
+		<tr>
 			<td class="tg-1vzr"><span
-					style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent"><!-- TL_TRACK_SETUP_DATE -->September 28th<!-- /TL_TRACK_SETUP_DATE --></span></td>
+					style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent"><!-- TL_TRACK_SETUP_DATE -->September 27th<!-- /TL_TRACK_SETUP_DATE --></span></td>
 			<td class="tg-j1gp"><span
 					style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">
-					Teams on-site registration and training/practice sessions</span>
+					Teams on-site check-in, car inspection, practice sessions (8:00 AM - 4:30 PM)</span>
 			</td>
 		</tr>
 
 		<tr>
 			<td class="tg-1vzr"><span
-					style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent"><!-- TL_TRAINING_DATE -->September 29th<!-- /TL_TRAINING_DATE --></span></td>
+					style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent"><!-- TL_TRAINING_DATE -->September 28th<!-- /TL_TRAINING_DATE --></span></td>
 			<td class="tg-j1gp"><span
 					style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">
-					Training/practice sessions</span>
+					Opening, team intros, mapping and practice sessions (from 9:30 AM)</span>
 			</td>
 		</tr>
 
 		<tr>
 			<td class="tg-1vzr"><span
-					style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent"><!-- TL_QUAL_DATE -->September 30th<!-- /TL_QUAL_DATE --></span></td>
+					style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent"><!-- TL_QUAL_DATE -->September 29th<!-- /TL_QUAL_DATE --></span></td>
 			<td class="tg-j1gp"><span
 					style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">
-					Qualification Time Trials</span>
+					Qualification time trials; bracket published end of day</span>
 			</td>
 		</tr>
 
 		<tr>
 			<td class="tg-1vzr"><span
-					style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent"><!-- TL_RACE_DATE -->October 1st<!-- /TL_RACE_DATE --></span></td>
+					style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent"><!-- TL_RACE_DATE -->September 30th<!-- /TL_RACE_DATE --></span></td>
 			<td class="tg-j1gp"><span
 					style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">
-					Head-to-Head Tournament & Award Ceremony</span>
-			</td>
-		</tr>
-
-		<tr>
-			<td class="tg-1vzr"><span
-					style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent"><!-- TL_WS_DATE -->June 5th, until 4:00 PM CEST (t.b.c.)<!-- /TL_WS_DATE --></span></td>
-			<td class="tg-j1gp"><span
-					style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">
-					Workshop and team presentations</span>
+					Multi-car knockout tournament; Award Ceremony 4:00 - 6:00 PM, Room 301</span>
 			</td>
 		</tr>
 	</tbody>
 </table>
-
-<!-- <h3><span>24th Roboracer Racing Competition TimeLine</span></h3>
-<table class="tg">
-	<thead>
-		<tr>
-			<th class="tg-wf0h"></th>
-			<th colspan="2"><span
-				style="font-weight:bold;font-style:inherit;color:#212931">Jun 3, 2024 (Landing Room C)</span></th>
-			<th colspan="2"><span
-				style="font-weight:bold;font-style:inherit;color:#212931">Jun 4, 2024 (Landing Room C)</span></th>
-			<th colspan="2"><span
-				style="font-weight:bold;font-style:inherit;color:#212931">Jun 5, 2024 (Landing Room C)</span></th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>08:00-09:00</td>
-			<td colspan="2">Registration</td>
-			<td colspan="2">Last Check for Race</td>
-			<td colspan="2">Final Check for Race</td>
-		</tr>
-		<tr>
-			<td>09:00-09:30</td>
-			<td colspan="2">Opening Ceremony & Announcement</td>
-			<td colspan="2">Announcement</td>
-			<td colspan="2">Announcement</td>
-		</tr>
-		<tr>
-			<td>09:30-10:30</td>
-			<td colspan="2">Team Introduction (2min per team)</td>
-			<td colspan="2">Practice</td>
-			<td colspan="2" rowspan="2">Head-to-Head Race</td>
-		</tr>
-		<tr>
-			<td>10:30-12:00</td>
-			<td colspan="2">Team Mapping (10min per team)</td>
-			<td colspan="2">Time Trial Race (5min per team)</td>
-		</tr>
-		<tr>
-			<td>12:00-13:00</td>
-			<td>Team Mapping (10min per team)</td>
-			<td>Lunch</td>
-			<td>Time Trial Race (5min per team)</td>
-			<td>Lunch</td>
-			<td>Head-to-Head Race</td>
-			<td>Lunch</td>
-		</tr>
-		<tr>
-			<td>13:00-14:00</td>
-			<td colspan="2" rowspan="1">Team Mapping (10min per team)</td>
-			<td colspan="2" rowspan="3">Time Trial Race (5min per team)</td>
-			<td colspan="2">Head-to-Head Race</td>
-		</tr>
-		<tr>
-			<td>14:00-15:00</td>
-			<td colspan="2" rowspan="4">Practice</td>
-			<td colspan="2">Award Cermony</td>
-		</tr>
-		<tr>
-			<td>15:00-16:00</td>
-			<td colspan="2" rowspan="5"></td>
-		</tr>
-		<tr>
-			<td>16:00-17:00</td>
-			<td colspan="2" rowspan="3">Banquet (Clearing Room)</td>
-		</tr>
-		<tr>
-			<td>17:00-18:00</td>
-		</tr>
-		<tr>
-			<td>18:00-21:00</td>
-			<td>Practice</td>
-			<td>Dinner</td>
-		</tr>
-		
-		<tr>
-			<td>21:00-</td>
-			<td colspan="2">Track open all night</td>
-			<td colspan="2">Track open all night</td>
-		</tr>
-	</tbody>
-	<caption>
-		This schedule may change depending on competition conditions.
-	</caption>
-</table>
-<p></p> -->
 
 </center>
-
-<!-- TL_SIM_PARAGRAPH --><p>For a detailed timeline of the virtual competition, please refer to the <a
-href="https://autodrive-ecosystem.github.io/competitions/roboracer-sim-racing-iv-2026/#timeline">virtual
-competition website</a>. </p><!-- /TL_SIM_PARAGRAPH -->
-
