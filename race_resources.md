@@ -69,14 +69,28 @@ assumptions in their control stack.
 <h3 id="simulation">Simulation</h3>
 
 <p>
-<b>An updated <a href="https://github.com/f1tenth/f1tenth_gym_ros">f1tenth_gym_ros</a> supporting
-multi-car (4-car) testing is coming soon.</b> It will be the recommended way to practice for the
-mandatory obstacle avoidance check and for multi-car racing in sim.
+<b>A multi-car (4-car) version of f1tenth_gym_ros is available now:</b>
+<a href="https://github.com/cedrichld/f1tenth_gym_ros/tree/four-cars">cedrichld/f1tenth_gym_ros,
+<code>four-cars</code> branch</a>. This is the recommended way to practice for the mandatory
+obstacle avoidance check and for multi-car racing in sim.
 </p>
 
 <p>
-The currently released f1tenth_gym_ros supports two cars, while the underlying
-<a href="https://github.com/f1tenth/f1tenth_gym">f1tenth_gym</a> already supports multiple vehicles.
-<b>We will link the updated version here as soon as it is released</b>. Please check back
-shortly.
+Note that this is a working branch and has <b>not yet been merged into the official
+<a href="https://github.com/f1tenth/f1tenth_gym_ros">f1tenth_gym_ros</a></b>, so clone the
+<code>four-cars</code> branch directly for now. The released f1tenth_gym_ros supports two cars,
+while the underlying <a href="https://github.com/f1tenth/f1tenth_gym">f1tenth_gym</a> already
+supports multiple vehicles. We will point this link at the official repository once the change is
+upstream.
+</p>
+
+<video src="images/Roboracer/four_car_sim.mp4" poster="images/Roboracer/four_car_sim.jpg"
+	autoplay muted loop playsinline controls preload="metadata"
+	style="width: 100%; max-width: 900px; height: auto; display: block; margin: 1em auto 0;">
+	Your browser does not support embedded video.
+	<a href="images/Roboracer/four_car_sim.mp4">Download the clip</a> instead.
+</video>
+
+<p style="text-align: center; font-size: 0.8rem;">
+<i>Four cars running in the <code>four-cars</code> branch of f1tenth_gym_ros.</i>
 </p>
