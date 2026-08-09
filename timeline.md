@@ -113,7 +113,7 @@ section: timeline
 					style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent"><!-- TL_VIDEO_DEMO_DATE -->September 12th<!-- /TL_VIDEO_DEMO_DATE --></span></td>
 			<td class="tg-j1gp"><span
 					style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">
-					Video demonstration due</span>
+					Video demonstration due (autonomous driving <b>and obstacle avoidance</b>)</span>
 			</td>
 		</tr>
 

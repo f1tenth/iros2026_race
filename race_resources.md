@@ -23,13 +23,21 @@ in which four cars race on the track at the same time.
 <b>Final rules to be updated soon.</b>
 </p>
 
-<h3 id="obstacle-avoidance">Obstacle Avoidance &mdash; Mandatory Check</h3>
+<h3 id="obstacle-avoidance">Obstacle Avoidance - Mandatory Check</h3>
 
 <p>
 <b>Every team must pass an obstacle avoidance check on site, immediately before the qualification
-time trials on September 29th.</b> This is not a formality: a car that does not pass does
-not run the time trials, and a team that does not run the time trials cannot compete. The check is
-done in person at the venue and there will also be a required short video submission before the competition (September 12th).
+time trials on September 29th.</b> This is not a formality: a car that does not pass does not run
+the time trials, and a team that does not run the time trials cannot compete.
+</p>
+
+<p>
+<b>Obstacle avoidance must also be shown in your video demonstration, due September 12th.</b> That
+video already asks you to show your car driving autonomously around a track without human
+intervention; for IROS 2026 it must additionally show your car avoiding obstacles. We review these
+videos and will come back to any team whose obstacle avoidance does not yet look ready, so you have
+time to improve it before you travel rather than being turned away on site. The video is there to
+help you pass the on-site check - it does not replace it.
 </p>
 
 <p>
@@ -63,12 +71,12 @@ assumptions in their control stack.
 <p>
 <b>An updated <a href="https://github.com/f1tenth/f1tenth_gym_ros">f1tenth_gym_ros</a> supporting
 multi-car (4-car) testing is coming soon.</b> It will be the recommended way to practice for the
-mandatory obstacle avoidance check and for multi-car racing, so plan your preparation around it.
+mandatory obstacle avoidance check and for multi-car racing in sim.
 </p>
 
 <p>
 The currently released f1tenth_gym_ros supports two cars, while the underlying
 <a href="https://github.com/f1tenth/f1tenth_gym">f1tenth_gym</a> already supports multiple vehicles.
-<b>We will link the updated version here as soon as it is released</b> &mdash; please check back
+<b>We will link the updated version here as soon as it is released</b>. Please check back
 shortly.
 </p>
