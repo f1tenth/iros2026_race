@@ -151,6 +151,16 @@ section: timeline
 					style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent"><!-- TL_QUAL_DATE -->September 29th<!-- /TL_QUAL_DATE --></span></td>
 			<td class="tg-j1gp"><span
 					style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">
+					<b>Mandatory obstacle avoidance check</b> (static and dynamic) &mdash; teams must
+					pass to enter the qualification time trials</span>
+			</td>
+		</tr>
+
+		<tr>
+			<td class="tg-1vzr"><span
+					style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent"><!-- TL_QUAL_DATE -->September 29th<!-- /TL_QUAL_DATE --></span></td>
+			<td class="tg-j1gp"><span
+					style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">
 					Qualification time trials; bracket published end of day</span>
 			</td>
 		</tr>

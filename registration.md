@@ -27,6 +27,22 @@ Registration closes on <b>September 5, 2026</b>.<br>
 The video demonstration is due on <b>September 12, 2026</b>.
 </p>
 
+<h3 id="obstacle-avoidance">Obstacle Avoidance Requirement</h3>
+
+<p>
+The registration form asks whether your team is ready to race more than one opponent (up to four
+cars on the track). Every team must pass a <b>mandatory obstacle avoidance check on site,
+immediately before the qualification time trials</b> &mdash; a car that does not pass does not run
+the trials, and so cannot compete. The check covers <b>both static and dynamic obstacles</b>, and
+the dynamic case may involve more than one opponent moving at the same time.
+</p>
+
+<p>
+Please prepare for this seriously; see
+<a href="{% link race_resources.md %}#obstacle-avoidance">Race Resources</a> for what to expect.
+<b>More details to come.</b>
+</p>
+
 <h3 id="conference-registration">Conference Registration</h3>
 
 <p>
