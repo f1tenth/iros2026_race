@@ -27,9 +27,9 @@ in which four cars race on the track at the same time.
 
 <p>
 <b>Every team must pass an obstacle avoidance check on site, immediately before the qualification
-time trials on September 29th.</b> This is a gate, not a formality: a car that does not pass does
+time trials on September 29th.</b> This is not a formality: a car that does not pass does
 not run the time trials, and a team that does not run the time trials cannot compete. The check is
-done in person at the venue &mdash; there is no video submission for it.
+done in person at the venue and there will also be a required short video submission before the competition (September 12th).
 </p>
 
 <p>
@@ -53,7 +53,7 @@ safe line with three other cars around you, and that is what you should be pract
 <h3 id="track-surface">Track Surface</h3>
 
 <p>
-The racing surface is the <b>bare exhibition hall floor (not carpeted)</b>. Teams should tune and
+The racing surface is the <b>bare exhibition hall floor</b>. Teams should tune and
 test their vehicles accordingly, in particular tire choice, suspension setup and any friction
 assumptions in their control stack.
 </p>
@@ -62,7 +62,7 @@ assumptions in their control stack.
 
 <p>
 <b>An updated <a href="https://github.com/f1tenth/f1tenth_gym_ros">f1tenth_gym_ros</a> supporting
-multi-car (4-car) testing is coming soon.</b> It will be the recommended way to practise for the
+multi-car (4-car) testing is coming soon.</b> It will be the recommended way to practice for the
 mandatory obstacle avoidance check and for multi-car racing, so plan your preparation around it.
 </p>
 
