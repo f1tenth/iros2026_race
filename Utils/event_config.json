@@ -113,7 +113,9 @@
             "title": "Researcher",
             "department": "Department of Electrical and Systems Engineering",
             "institution": "University of Pennsylvania"
-        },
+        }
+    ],
+    "organizers_removed_keep_for_later": [
         {
             "name": "Yon Vanommeslaegh",
             "image": "images/organizer/yon.jpg",
