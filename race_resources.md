@@ -69,19 +69,27 @@ assumptions in their control stack.
 <h3 id="simulation">Simulation</h3>
 
 <p>
-<b>A multi-car (4-car) version of f1tenth_gym_ros is available now:</b>
-<a href="https://github.com/cedrichld/f1tenth_gym_ros/tree/four-cars">cedrichld/f1tenth_gym_ros,
-<code>four-cars</code> branch</a>. This is the recommended way to practice for the mandatory
-obstacle avoidance check and for multi-car racing in sim.
+<b>Multi-car simulation is now merged upstream:</b> use the
+<a href="https://github.com/f1tenth/f1tenth_gym_ros/tree/dev-humble"><code>dev-humble</code> branch
+of f1tenth_gym_ros</a> to practice for the mandatory obstacle avoidance check and for multi-car
+racing in sim. In short:
 </p>
 
+<ul>
+<li>Set the number of cars with <code>num_agent</code>, either in <code>config/sim.yaml</code> or
+directly at launch:<br>
+<code>ros2 launch f1tenth_gym_ros gym_bridge_launch.py num_agent:=4</code></li>
+<li>The first car is the ego, the rest are opponents. Each opponent gets its own topics
+(<code>/opp_drive</code>, <code>/opp_drive2</code>, ...), and a car only moves when you publish to
+its drive topic.</li>
+<li>Every car needs a start pose in the config (<code>sx1</code>/<code>sy1</code>/<code>stheta1</code>,
+...). The shipped <code>sim.yaml</code> already defines four, so <code>num_agent:=4</code> works out
+of the box; define more poses to run more cars.</li>
+</ul>
+
 <p>
-Note that this is a working branch and has <b>not yet been merged into the official
-<a href="https://github.com/f1tenth/f1tenth_gym_ros">f1tenth_gym_ros</a></b>, so clone the
-<code>four-cars</code> branch directly for now. The released f1tenth_gym_ros supports two cars,
-while the underlying <a href="https://github.com/f1tenth/f1tenth_gym">f1tenth_gym</a> already
-supports multiple vehicles. We will point this link at the official repository once the change is
-upstream.
+Full instructions are in the
+<a href="https://github.com/f1tenth/f1tenth_gym_ros/tree/dev-humble#readme">repository README</a>.
 </p>
 
 <video src="images/Roboracer/four_car_sim.mp4" poster="images/Roboracer/four_car_sim.jpg"
@@ -92,5 +100,5 @@ upstream.
 </video>
 
 <p style="text-align: center; font-size: 0.8rem;">
-<i>Four cars running in the <code>four-cars</code> branch of f1tenth_gym_ros.</i>
+<i>Four cars running in f1tenth_gym_ros (<code>dev-humble</code>).</i>
 </p>

@@ -24,10 +24,9 @@ built in Python. This simulation runs faster than real-time execution (30x realt
 realistic vehicle simulation and collision, runs multiple vehicle instances and publishes laser scan
 and odometry data. When it comes to a more close vehicle development we provide the <a
 href="https://github.com/f1tenth/f1tenth_gym_ros">Roboracer ROS Simulator</a> which is providing
-the ROS messages from the Roboracer car in and simulation environment. An updated
-f1tenth_gym_ros supporting multi-car (4-car) testing is in development for this competition; the
-currently released version supports two cars, while the underlying Roboracer Gym already supports
-multiple vehicles.</p>
+the ROS messages from the Roboracer car in and simulation environment. Multi-car simulation is now
+supported on the <a href="https://github.com/f1tenth/f1tenth_gym_ros/tree/dev-humble">dev-humble
+branch</a>; see the Race Resources page for a quick overview.</p>
 <h3>Digital Twin</h3>
 <p><span class="image right"><a href="https://youtu.be/Rq7Wwcwn1uk?feature=shared"><img
 		src="images/Roboracer/autodrive_sim_f1tenth.png" style="width: 20vw"
