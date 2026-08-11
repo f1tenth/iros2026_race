@@ -19,45 +19,7 @@ sessions. Registration to IROS 2026 is expected for all competitors.
 </center>
 
 <br>
-
-<h3 id="deadlines">Deadlines</h3>
-
-<p>
-Registration closes on <b>September 5, 2026</b>.<br>
-The video demonstration is due on <b>September 12, 2026</b>, and must show both autonomous driving
-and obstacle avoidance.
-</p>
-
-<h3 id="obstacle-avoidance">Obstacle Avoidance Requirement</h3>
-
-<p>
-The registration form asks whether your team is ready to race more than one opponent (up to four
-cars on the track). Every team must pass a <b>mandatory obstacle avoidance check on site,
-immediately before the qualification time trials</b> &mdash; a car that does not pass does not run
-the trials, and so cannot compete. The check covers <b>both static and dynamic obstacles</b>, and
-the dynamic case may involve more than one opponent moving at the same time.
-</p>
-
-<p>
-Your <b>video demonstration, due September 12th, must also show obstacle avoidance</b> and not just
-autonomous driving. We review these videos and will come back to any team whose obstacle avoidance
-does not yet look ready, so it can be improved before you travel rather than becoming a problem on
-site.
-</p>
-
-<p>
-Please prepare for this seriously; see
-<a href="{% link race_resources.md %}#obstacle-avoidance">Race Resources</a> for what to expect.
-<b>More details to come.</b>
-</p>
-
-<h3 id="conference-registration">Conference Registration</h3>
-
-<p>
-Competition participants receive a discounted conference registration price. More details to come.
 <br>
-Authors presenting an accepted IROS paper must purchase full conference registration instead.
-</p>
 
 <h3 id="accomodation">Accomodation</h3>
 

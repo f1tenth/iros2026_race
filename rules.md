@@ -9,14 +9,6 @@ section: race
 
 These rules are prepared for the _31st International RoboRacer Autonomous Racing Competition_. Rules are subject to change.
 
-The IROS 2026 competition is run as a **multi-car (4-car) knockout competition**, on the bare
-exhibition hall floor (not carpeted). Every team must pass a **mandatory obstacle avoidance check**
-on site, immediately before the qualification time trials, covering both static and dynamic
-obstacles. A car that does not pass does not run the trials. Obstacle avoidance must also be shown
-in the **video demonstration due September 12th**, alongside the autonomous driving it already
-requires.
-**Final rules to be updated soon.**
-
 {% comment %}
 <style>
 ol#markdown-toc  li {
