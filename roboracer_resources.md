@@ -24,9 +24,9 @@ built in Python. This simulation runs faster than real-time execution (30x realt
 realistic vehicle simulation and collision, runs multiple vehicle instances and publishes laser scan
 and odometry data. When it comes to a more close vehicle development we provide the <a
 href="https://github.com/f1tenth/f1tenth_gym_ros">Roboracer ROS Simulator</a> which is providing
-the ROS messages from the Roboracer car in and simulation environment. Multi-car simulation is now
+the ROS messages from the Roboracer car in and simulation environment. Multi-car simulation is
 supported on the <a href="https://github.com/f1tenth/f1tenth_gym_ros/tree/dev-humble">dev-humble
-branch</a>; see the Race Resources page for a quick overview.</p>
+branch</a>; see <a href="{% link multi_car_sim.md %}">Setting up f1tenth_gym_ros with 4 cars</a>.</p>
 <h3>Digital Twin</h3>
 <p><span class="image right"><a href="https://youtu.be/Rq7Wwcwn1uk?feature=shared"><img
 		src="images/Roboracer/autodrive_sim_f1tenth.png" style="width: 20vw"
@@ -42,7 +42,7 @@ mixed (human vs. AI) races. It offers various <a
 href="https://github.com/Tinker-Twins/AutoDRIVE/tree/AutoDRIVE-Devkit">APIs</a> to flexibly
 develop autonomy algorithms and supports a range of <a
 href="https://youtu.be/_cwrw1w5d_g?si=GHBhRSDZh2AwvwKj">HMIs</a> to observe and interact with
-the digital twins in real-time. You can use it to prototype your autonomous racing algorithms
+the digital twins in real-time. <!-- SIM_LEAGUE_SENTENCE -->This simulator can be used to prototype your autonomous racing algorithms<!-- /SIM_LEAGUE_SENTENCE -->
 before deploying them on the physical vehicles. The best part – AutoDRIVE Simulator is completely <a
 href="https://github.com/Tinker-Twins/AutoDRIVE/tree/AutoDRIVE-Simulator">open-source</a> and
 can be customized to fit your R&D objectives beyond this competition!</p>
@@ -53,5 +53,5 @@ useful learning resources for you. The complete material from our Roboracer Penn
 online at <a href="https://roboracer.ai/learn.html">Roboracer Learn </a>. This course provides
 lectures about autonomous driving foundations, includes tutorials about the Roboracer car and
 provides you with some insights in autonomous racing techniques e.g. raceline finding. In addition
-all lectures were recorded and can be foun at the <a href="https://youtu.be/zENhppcxwzY">Roboracer
+all lectures were recorded and can be found at the <a href="https://youtu.be/zENhppcxwzY">Roboracer
 Autonomous Racing Course </a> on Youtube. </p>

@@ -32,4 +32,6 @@ section: stream
 
 <!-- BRACKET_SECTION --><!-- /BRACKET_SECTION -->
 
+<!-- BRACKET_EMBED --><!-- /BRACKET_EMBED -->
+
 </center>

@@ -94,85 +94,57 @@ section: timeline
 		</tr>
 	</thead>
 	<tbody>
+		<tr class="tg-1vzr">
+			<td class="tg-1vzr"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent"><!-- TL_REG_OPEN_DATE -->June 9th<!-- /TL_REG_OPEN_DATE --></span></td>
+			<td class="tg-j1gp"><span style="font-weight:400;font-style:normal"><!-- TL_REG_OPEN_TEXT --><a href="https://forms.gle/nhDytwxKEy4EpUHa6">Registration Opens</a><!-- /TL_REG_OPEN_TEXT --></span></td>
+		</tr>
+
 		<!-- TL_O1_ROW --><tr>
-<td class="tg-1vzr"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">August 26th, 11:00 AM - 12:00 PM ET</span></td>
-<td class="tg-j1gp"><span style="font-weight:400;font-style:normal">RoboRacer Orientation 1 (competition rules overview)</span></td>
+<td class="tg-1vzr"><span
+style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">August 26th, 11:00 AM - 12:00 PM ET</span>
+</td>
+<td class="tg-j1gp"><span style="font-weight:inherit;font-style:inherit">RoboRacer Orientation 1 (competition rules overview)</span>
+</td>
 </tr><!-- /TL_O1_ROW -->
 
 		<tr>
 			<td class="tg-tbri"><span
-					style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent"><!-- TL_REG_CLOSE_DATE -->September 5th<!-- /TL_REG_CLOSE_DATE --></span></td>
-			<td class="tg-npj4"><span
-					style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">
-					Registration closes</span>
-			</td>
-		</tr>
-
-		<tr>
-			<td class="tg-1vzr"><span
-					style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent"><!-- TL_VIDEO_DEMO_DATE -->September 12th<!-- /TL_VIDEO_DEMO_DATE --></span></td>
-			<td class="tg-j1gp"><span
-					style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">
-					Video demonstration due (autonomous driving <b>and obstacle avoidance</b>)</span>
+					style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent"><!-- TL_REG_CLOSE_DATE -->September 12th<!-- /TL_REG_CLOSE_DATE --></span></td>
+			<td class="tg-npj4"><span style="font-weight:400;font-style:normal">Registration Closes,
+					<!-- TL_VIDEO_DEMO_TEXT -->Video Demonstration Due<!-- /TL_VIDEO_DEMO_TEXT --></span>
 			</td>
 		</tr>
 
 		<!-- TL_O2_ROW --><tr>
-<td class="tg-tbri"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">September 16th, 11:00 AM - 12:00 PM ET</span></td>
-<td class="tg-npj4"><span style="font-weight:400;font-style:normal">RoboRacer Orientation 2 (venue walkthrough, track and surface overview, run-of-show)</span></td>
+<td class="tg-tbri"><span
+style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">September 16th, 11:00 AM - 12:00 PM ET</span></td>
+<td class="tg-npj4"><span style="font-weight:400;font-style:normal">RoboRacer Orientation 2 (venue walkthrough, track and surface overview, run-of-show)</span>
+</td>
 </tr><!-- /TL_O2_ROW -->
 
-		<tr>
-			<td class="tg-wf0h" colspan="2"><span
-					style="font-weight:bold;font-style:inherit;color:#212931">ON-SITE COMPETITION
-					(TENTATIVE)</span></td>
-		</tr>
+		<!-- TL_TRACK_SETUP_ROW --><tr>
+<td class="tg-1vzr"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">September 27th</span></td>
+<td class="tg-j1gp"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Teams on-site registration and training/practice sessions</span>
+</td>
+</tr><!-- /TL_TRACK_SETUP_ROW -->
 
-		<tr>
-			<td class="tg-1vzr"><span
-					style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent"><!-- TL_TRACK_SETUP_DATE -->September 27th<!-- /TL_TRACK_SETUP_DATE --></span></td>
-			<td class="tg-j1gp"><span
-					style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">
-					Teams on-site check-in, car inspection, practice sessions (8:00 AM - 4:30 PM)</span>
-			</td>
-		</tr>
+		<!-- TL_TRAINING_ROW --><tr>
+<td class="tg-1vzr"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">September 28th</span></td>
+<td class="tg-j1gp"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Training/practice sessions</span>
+</td>
+</tr><!-- /TL_TRAINING_ROW -->
 
-		<tr>
-			<td class="tg-1vzr"><span
-					style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent"><!-- TL_TRAINING_DATE -->September 28th<!-- /TL_TRAINING_DATE --></span></td>
-			<td class="tg-j1gp"><span
-					style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">
-					Opening, team intros, mapping and practice sessions (from 9:30 AM)</span>
-			</td>
-		</tr>
+		<!-- TL_QUAL_ROW --><tr>
+<td class="tg-1vzr"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">September 29th</span></td>
+<td class="tg-j1gp"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Qualification Time Trials</span>
+</td>
+</tr><!-- /TL_QUAL_ROW -->
 
-		<tr>
-			<td class="tg-1vzr"><span
-					style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent"><!-- TL_QUAL_DATE -->September 29th<!-- /TL_QUAL_DATE --></span></td>
-			<td class="tg-j1gp"><span
-					style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">
-					<b>Mandatory obstacle avoidance check</b> (static and dynamic) &mdash; teams must
-					pass to enter the qualification time trials</span>
-			</td>
-		</tr>
-
-		<tr>
-			<td class="tg-1vzr"><span
-					style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent"><!-- TL_QUAL_DATE -->September 29th<!-- /TL_QUAL_DATE --></span></td>
-			<td class="tg-j1gp"><span
-					style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">
-					Qualification time trials; bracket published end of day</span>
-			</td>
-		</tr>
-
-		<tr>
-			<td class="tg-1vzr"><span
-					style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent"><!-- TL_RACE_DATE -->September 30th<!-- /TL_RACE_DATE --></span></td>
-			<td class="tg-j1gp"><span
-					style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">
-					Multi-car knockout tournament; Award Ceremony 4:00 - 6:00 PM, Room 301</span>
-			</td>
-		</tr>
+		<!-- TL_RACE_ROW --><tr>
+<td class="tg-1vzr"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">September 30th</span></td>
+<td class="tg-j1gp"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Head-to-Head Tournament &amp; Award Ceremony</span>
+</td>
+</tr><!-- /TL_RACE_ROW -->
 	</tbody>
 </table>
 
