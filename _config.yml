@@ -1,2 +1,8 @@
 kramdown:
   header_offset: 2
+
+exclude:
+  - Utils
+  - uv.lock
+  - pyproject.toml
+  - .venv

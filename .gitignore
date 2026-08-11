@@ -1,5 +1,9 @@
 _site/
+.jekyll-cache/
+vendor/
+.bundle/
 Gemfile
 Gemfile.lock
 *__pycache__/
 *.pyc
+.venv/
