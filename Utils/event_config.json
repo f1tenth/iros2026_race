@@ -20,14 +20,14 @@
             "team_training": -2,
             "track_setup": -3,
             "orientation_2": -14,
-            "video_demo_due": -18,
-            "registration_closes": -25,
+            "registration_closes": -18,
             "orientation_1": -35,
             "registration_open": -113
         }
     },
     "orientation_1": {
         "time_display": "11:00 AM - 12:00 PM ET",
+        "date_override": "",
         "description": "RoboRacer Orientation 1 (competition rules overview)",
         "zoom_link": "",
         "slides_link": "",
@@ -35,6 +35,7 @@
     },
     "orientation_2": {
         "time_display": "11:00 AM - 12:00 PM ET",
+        "date_override": "",
         "description": "RoboRacer Orientation 2 (venue walkthrough, track and surface overview, run-of-show)",
         "zoom_link": "",
         "slides_link": "",
@@ -43,11 +44,16 @@
     "registration": {
         "status": "open",
         "form_link": "https://forms.gle/nhDytwxKEy4EpUHa6",
-        "hide_participants": true
+        "video_demo_form_link": "",
+        "hardware_list_form_link": "",
+        "hide_participants": true,
+        "registration_open_date_override": "",
+        "registration_closes_date_override": ""
     },
     "results": {
         "time_trial_sheet_link": "",
         "bracket_link": "",
+        "bracket_embed_url": "",
         "youtube_stream_id": "",
         "twitch_parent_domains": [
             "iros2026-race.roboracer.ai",
@@ -60,10 +66,32 @@
     },
     "sim_racing": {
         "enabled": false,
-        "edition": "6th",
-        "website_url": "https://autodrive-ecosystem.github.io/competitions/roboracer-sim-racing-iv-2026/",
-        "registration_url": "https://autodrive-ecosystem.github.io/competitions/roboracer-sim-racing-iv-2026/#registration",
-        "timeline_url": "https://autodrive-ecosystem.github.io/competitions/roboracer-sim-racing-iv-2026/#timeline"
+        "edition": "",
+        "website_url": "",
+        "registration_url": "",
+        "timeline_url": ""
+    },
+    "competition_days": {
+        "track_setup": {
+            "enabled": true,
+            "date_override": "",
+            "time_display": ""
+        },
+        "team_training": {
+            "enabled": true,
+            "date_override": "",
+            "time_display": ""
+        },
+        "qualification": {
+            "enabled": true,
+            "date_override": "",
+            "time_display": ""
+        },
+        "race": {
+            "enabled": true,
+            "date_override": "",
+            "time_display": ""
+        }
     },
     "organizers": [
         {
@@ -115,14 +143,36 @@
             "institution": "University of Pennsylvania"
         }
     ],
-    "organizers_removed_keep_for_later": [
-        {
-            "name": "Yon Vanommeslaegh",
-            "image": "images/organizer/yon.jpg",
-            "profile_url": "https://www.linkedin.com/in/yonvanom/",
-            "title": "Visiting Researcher",
-            "department": "Department of Electrical and Systems Engineering",
-            "institution": "University of Pennsylvania"
+    "extra_resources": "\n- [Setting up f1tenth_gym_ros with 4 cars]({% link multi_car_sim.md %})",
+    "certification": {
+        "csv_paths": {
+            "registration": "",
+            "video": "",
+            "hardware": ""
+        },
+        "ticks": {},
+        "overrides": {
+            "submission_links": {},
+            "ignored_submissions": [],
+            "blocked_links": [],
+            "allowed_links": []
+        },
+        "member_overrides": {},
+        "manual_teams": [],
+        "email": {
+            "signature": "RoboRacer Organizing Team",
+            "conference_registration_url": "",
+            "conference_registration_note": "",
+            "confirmation_extra": "",
+            "reminder_extra": ""
         }
-    ]
+    },
+    "schedule": {
+        "timezone_label": "ET",
+        "csv_path": "",
+        "group_size": 4,
+        "groups": {},
+        "days": []
+    },
+    "ui_scale": null
 }
