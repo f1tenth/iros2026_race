@@ -3886,21 +3886,17 @@ class RepositoryUpdater:
                     reg_close = reg_close_calc
                 content = self.replace_placeholder(content, "TL_REG_CLOSE_DATE", reg_close)
 
-            # Video Demo form link - make it a link if provided
-            video_demo_form = self.reg.get("video_demo_form_link", "")
-            if video_demo_form:
-                video_demo_text = f'<a href="{video_demo_form}">Video Demonstration Due</a>'
-            else:
-                video_demo_text = 'Video Demonstration Due'
-            content = self.replace_placeholder(content, "TL_VIDEO_DEMO_TEXT", video_demo_text)
-
-            # Hardware list form link - make it a link if provided
-            hardware_list_form = self.reg.get("hardware_list_form_link", "")
-            if hardware_list_form:
-                hardware_list_text = f'<a href="{hardware_list_form}">Hardware List Due</a>'
-            else:
-                hardware_list_text = 'Hardware List Due'
-            content = self.replace_placeholder(content, "TL_HARDWARE_LIST_TEXT", hardware_list_text)
+            # Extra deadlines that share the registration-close row. Each emits its
+            # own leading separator so a deadline the event does not run drops out
+            # cleanly instead of leaving a dangling comma or an unlinked label.
+            extra_deadlines = (
+                ("TL_VIDEO_DEMO_TEXT", "video_demo_form_link", "Video Demonstration Due"),
+                ("TL_HARDWARE_LIST_TEXT", "hardware_list_form_link", "Hardware List Due"),
+            )
+            for marker, config_key, label in extra_deadlines:
+                form_link = self.reg.get(config_key, "")
+                deadline_text = f', <a href="{form_link}">{label}</a>' if form_link else ''
+                content = self.replace_placeholder(content, marker, deadline_text)
 
             # Orientation 2 row - full element
             o2_calc_date = format_date_display(self.dates.get("orientation_2", "")) if "orientation_2" in self.dates else ""

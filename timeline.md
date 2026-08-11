@@ -95,7 +95,7 @@ section: timeline
 	</thead>
 	<tbody>
 		<tr class="tg-1vzr">
-			<td class="tg-1vzr"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent"><!-- TL_REG_OPEN_DATE -->June 9th<!-- /TL_REG_OPEN_DATE --></span></td>
+			<td class="tg-1vzr"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent"><!-- TL_REG_OPEN_DATE --><span style="text-decoration:line-through;color:#c00;">June 9th</span><br><span>August 11th</span><!-- /TL_REG_OPEN_DATE --></span></td>
 			<td class="tg-j1gp"><span style="font-weight:400;font-style:normal"><!-- TL_REG_OPEN_TEXT --><a href="https://forms.gle/nhDytwxKEy4EpUHa6">Registration Opens</a><!-- /TL_REG_OPEN_TEXT --></span></td>
 		</tr>
 
@@ -109,9 +109,8 @@ style="font-weight:400;font-style:normal;text-decoration:none;color:#000;backgro
 
 		<tr>
 			<td class="tg-tbri"><span
-					style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent"><!-- TL_REG_CLOSE_DATE -->September 12th<!-- /TL_REG_CLOSE_DATE --></span></td>
-			<td class="tg-npj4"><span style="font-weight:400;font-style:normal">Registration Closes,
-					<!-- TL_VIDEO_DEMO_TEXT -->Video Demonstration Due<!-- /TL_VIDEO_DEMO_TEXT --></span>
+					style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent"><!-- TL_REG_CLOSE_DATE --><span style="text-decoration:line-through;color:#c00;">September 12th</span><br><span>September 9th</span><!-- /TL_REG_CLOSE_DATE --></span></td>
+			<td class="tg-npj4"><span style="font-weight:400;font-style:normal">Registration Closes<!-- TL_VIDEO_DEMO_TEXT -->, <a href="https://forms.gle/uRoVUoV2ihu6PQuK8">Video Demonstration Due</a><!-- /TL_VIDEO_DEMO_TEXT --><!-- TL_HARDWARE_LIST_TEXT -->, <a href="https://forms.gle/K4FCnzAVb3kbEF4KA">Hardware List Due</a><!-- /TL_HARDWARE_LIST_TEXT --></span>
 			</td>
 		</tr>
 

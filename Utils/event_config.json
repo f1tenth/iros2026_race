@@ -44,11 +44,11 @@
     "registration": {
         "status": "open",
         "form_link": "https://forms.gle/nhDytwxKEy4EpUHa6",
-        "video_demo_form_link": "",
-        "hardware_list_form_link": "",
+        "video_demo_form_link": "https://forms.gle/uRoVUoV2ihu6PQuK8",
+        "hardware_list_form_link": "https://forms.gle/K4FCnzAVb3kbEF4KA",
         "hide_participants": true,
-        "registration_open_date_override": "",
-        "registration_closes_date_override": ""
+        "registration_open_date_override": "August 11th",
+        "registration_closes_date_override": "September 9th"
     },
     "results": {
         "time_trial_sheet_link": "",
