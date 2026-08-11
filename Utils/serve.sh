@@ -32,12 +32,38 @@ if [ ! -f _includes/roboracer_rules/rules_v3.md ]; then
 	git submodule update --init --recursive
 fi
 
+# LiveReload defaults to port 35729. If anything else already holds it, the
+# reactor thread dies on bind and takes the whole server down with it, so pick
+# the first free port instead. Ruby does the probing because it is already a
+# prerequisite and TCPServer.new fails exactly where the reactor would.
+LIVERELOAD=(--livereload)
+case " $* " in
+*" --livereload-port"*)
+	: # the caller pinned a port; respect it
+	;;
+*)
+	for port in {35729..35759}; do
+		if ruby -rsocket -e 'TCPServer.new("127.0.0.1", ARGV[0].to_i).close' "$port" 2>/dev/null; then
+			LIVERELOAD+=(--livereload-port "$port")
+			if [ "$port" -ne 35729 ]; then
+				echo "LiveReload port 35729 is in use; falling back to $port."
+			fi
+			break
+		fi
+	done
+	if [ "${#LIVERELOAD[@]}" -eq 1 ]; then
+		echo "No free LiveReload port in 35729-35759; serving without live reload." >&2
+		LIVERELOAD=()
+	fi
+	;;
+esac
+
 # Use Bundler only when the project actually pins its gems; this repo gitignores
 # Gemfile/Gemfile.lock, so the plain jekyll binary is the normal path.
 if [ -f Gemfile ]; then
 	bundle config set --local path vendor/bundle
 	bundle install
-	exec bundle exec jekyll serve --livereload "$@"
+	exec bundle exec jekyll serve "${LIVERELOAD[@]}" "$@"
 fi
 
-exec jekyll serve --livereload "$@"
+exec jekyll serve "${LIVERELOAD[@]}" "$@"
