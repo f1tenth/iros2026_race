@@ -65,11 +65,11 @@
         "results_placeholder_text": "Results will be posted after the competition."
     },
     "sim_racing": {
-        "enabled": false,
-        "edition": "",
-        "website_url": "",
-        "registration_url": "",
-        "timeline_url": ""
+        "enabled": true,
+        "edition": "6th",
+        "website_url": "https://autodrive-ecosystem.github.io/competitions/roboracer-sim-racing-iros-2026/",
+        "registration_url": "https://forms.gle/MiuoSMYQ4z6QACLS6",
+        "timeline_url": "https://autodrive-ecosystem.github.io/competitions/roboracer-sim-racing-iros-2026/#timeline"
     },
     "competition_days": {
         "track_setup": {

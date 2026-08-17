@@ -42,7 +42,7 @@ mixed (human vs. AI) races. It offers various <a
 href="https://github.com/Tinker-Twins/AutoDRIVE/tree/AutoDRIVE-Devkit">APIs</a> to flexibly
 develop autonomy algorithms and supports a range of <a
 href="https://youtu.be/_cwrw1w5d_g?si=GHBhRSDZh2AwvwKj">HMIs</a> to observe and interact with
-the digital twins in real-time. <!-- SIM_LEAGUE_SENTENCE -->This simulator can be used to prototype your autonomous racing algorithms<!-- /SIM_LEAGUE_SENTENCE -->
+the digital twins in real-time. <!-- SIM_LEAGUE_SENTENCE -->This simulator will be used for the <a href="https://autodrive-ecosystem.github.io/competitions/roboracer-sim-racing-iros-2026/">Roboracer Sim Racing League</a>, but you can also use it to prototype your autonomous racing algorithms<!-- /SIM_LEAGUE_SENTENCE -->
 before deploying them on the physical vehicles. The best part – AutoDRIVE Simulator is completely <a
 href="https://github.com/Tinker-Twins/AutoDRIVE/tree/AutoDRIVE-Simulator">open-source</a> and
 can be customized to fit your R&D objectives beyond this competition!</p>

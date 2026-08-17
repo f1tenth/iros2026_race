@@ -9,6 +9,9 @@ competition.
 A team can consist of multiple teammates. Teams with only one person are also allowed.
 Teams that take part in the in-person competition need to provide and build an Roboracer car by
 themselves.
+To register in the 6th Roboracer Sim Racing League, please refer to the <a
+href="https://forms.gle/MiuoSMYQ4z6QACLS6">Sim
+Racing Registration page</a>.
 <br>
 The following Google form is only for preliminary registration and for orientation and information
 sessions. Registration to IROS 2026 is expected for all competitors.
