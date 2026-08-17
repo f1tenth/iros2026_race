@@ -10,6 +10,7 @@ simulation environments and track data will be displayed here.
 
 - [Rules]({% link rules.md %})
 - [Competition Rules]({% link competition_rules.md %})
+- [FAQ]({% link faq.md %})
 <!-- ORIENTATION_LINKS --><!-- /ORIENTATION_LINKS -->
 <!-- EXTRA_RESOURCES -->
 - [Setting up f1tenth_gym_ros with 4 cars]({% link multi_car_sim.md %})
