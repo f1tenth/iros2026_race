@@ -141,6 +141,22 @@
             "title": "Researcher",
             "department": "Department of Electrical and Systems Engineering",
             "institution": "University of Pennsylvania"
+        },
+        {
+            "name": "Amr El-Wakeel",
+            "profile_url": "https://directory.statler.wvu.edu/faculty-staff-directory/amr-el-wakeel",
+            "title": "Assistant Professor",
+            "department": "Lane Department of Computer Science and Electrical Engineering",
+            "institution": "West Virginia University",
+            "image": "images/organizer/AmrElWakeel-290x290.jpg"
+        },
+        {
+            "name": "Mohamed Elgouhary",
+            "profile_url": "https://www.linkedin.com/in/elgouhary-ai",
+            "title": "Graduate Research Assistant",
+            "department": "LCSEELane Department of Computer Science and Electrical Engineering",
+            "institution": "West Virginia University",
+            "image": "images/organizer/Mohamed.jpeg"
         }
     ],
     "extra_resources": "\n- [Setting up f1tenth_gym_ros with 4 cars]({% link multi_car_sim.md %})",
