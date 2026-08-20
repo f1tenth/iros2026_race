@@ -157,6 +157,22 @@
             "department": "LCSEELane Department of Computer Science and Electrical Engineering",
             "institution": "West Virginia University",
             "image": "images/organizer/Mohamed.jpeg"
+        },
+        {
+            "name": "John M. Dolan",
+            "profile_url": "https://www.ri.cmu.edu/ri-faculty/john-m-dolan/",
+            "title": "Principal Systems Scientist",
+            "department": "Robotics Institute",
+            "institution": "Carnegie Mellon University",
+            "image": "images/organizer/john-dolan-cmu.jpg"
+        },
+        {
+            "name": "Wenshan Wang",
+            "profile_url": "https://www.ri.cmu.edu/ri-faculty/wenshan-wang/",
+            "title": "Systems Scientist",
+            "department": "Robotics Institute",
+            "institution": "Carnegie Mellon University",
+            "image": "images/organizer/WenshanWang.jpeg"
         }
     ],
     "extra_resources": "\n- [Setting up f1tenth_gym_ros with 4 cars]({% link multi_car_sim.md %})",
