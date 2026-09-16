@@ -24,6 +24,22 @@ sessions. Registration to IROS 2026 is expected for all competitors.
 <br>
 <br>
 
+<h3 id="video-and-hardware-list">Video Demonstration and Hardware List</h3>
+
+<p>
+A registration becomes final once the team has also submitted a video demonstration and a hardware list (see the
+<a href="{% link competition_rules.md %}#competition-registration">Competition Rules</a>). Both are due when
+registration closes; see the <a href="{% link timeline.md %}">Timeline</a> for the date.
+</p>
+
+<center class="actions">
+<a href="https://forms.gle/EhJ85RDMCjWvdJmL7" class="button">Submit Video</a>
+<a href="https://forms.gle/GFDcLBNNeDUVRNkNA" class="button">Submit Hardware List</a>
+</center>
+
+<br>
+<br>
+
 <h3 id="accomodation">Accomodation</h3>
 
 <p>
