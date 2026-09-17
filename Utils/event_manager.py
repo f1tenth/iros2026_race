@@ -4078,6 +4078,9 @@ class RepositoryUpdater:
             )
         else:
             sim_sentence = ""
+        # Optional fee / subsidy sentence, kept in the config with the other registration facts.
+        fee_note = self.reg.get("fee_note", "").strip()
+        fee_line = f"\n{fee_note}" if fee_note else ""
         reg_info = self._clean_html(f'''<p>This competition is open for everyone of all levels, everyone is welcome to participate in this
 					competition.
 					A team can consist of multiple teammates. Teams with only one person are also allowed.
@@ -4085,7 +4088,7 @@ class RepositoryUpdater:
 					themselves.{sim_sentence}
 					<br>
 					The following Google form is only for preliminary registration and for orientation and information
-					sessions. Registration to {self.conf_with_year} is expected for all competitors.
+					sessions. Registration to {self.conf_with_year} is expected for all competitors.{fee_line}
 				</p>''')
         content = self.replace_placeholder(content, "REG_INFO_PARAGRAPH", reg_info)
 

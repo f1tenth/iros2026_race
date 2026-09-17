@@ -48,7 +48,8 @@
         "hardware_list_form_link": "https://forms.gle/K4FCnzAVb3kbEF4KA",
         "hide_participants": true,
         "registration_open_date_override": "August 11th",
-        "registration_closes_date_override": "September 18th"
+        "registration_closes_date_override": "September 18th",
+        "fee_note": "With the discount code emailed to registered teams, the IROS rate is $300 per person; the first 10 teams present at the competition receive a $500 subsidy."
     },
     "results": {
         "time_trial_sheet_link": "",

@@ -15,6 +15,7 @@ Racing Registration page</a>.
 <br>
 The following Google form is only for preliminary registration and for orientation and information
 sessions. Registration to IROS 2026 is expected for all competitors.
+With the discount code emailed to registered teams, the IROS rate is $300 per person; the first 10 teams present at the competition receive a $500 subsidy.
 </p><!-- /REG_INFO_PARAGRAPH -->
 
 <center class="actions">
