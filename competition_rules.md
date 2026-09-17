@@ -176,11 +176,6 @@ Qualification won't be organized as a separate session. The teams will qualify f
 
 With up to four cars on the track, the race is not paused when a car crashes. Volunteers reset the crashed cars while the other cars keep racing, and a yellow flag stops all overtaking until the crash is cleared. These rules replace the crash procedure of the [General Rules]({% link rules.md %}#race-penalties), where the race is paused and the at-fault car is placed 2 m behind.
 
-## Autonomous driving only
-
-- Cars MUST drive autonomously at all times during a race. Driving a car with the remote controller is not allowed at any point, not even to reset it after a crash: a crashed car is stopped with the kill-switch and carried by volunteers. Reversing a car under manual control into the path of the racing cars is an example of what this rule prevents.
-- A car stopped by its Operator (see the yellow flag below) is restarted in autonomous mode.
-
 ## Crashes
 
 - The Operator stops a crashed car with the kill-switch. Volunteers or team members, move it to the outside border of the track next to where it crashed, as close to the border as possible (for example, in a left turn, on the right-hand border).
