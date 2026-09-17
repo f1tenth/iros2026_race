@@ -25,6 +25,7 @@ The competition will take place in the [David L. Lawrence Convention Center](htt
 
 - Additional requirements:
   - Space for sticker: 40×15 mm (on a visible location; e.g., front or top of the car). Sticker will be used to certify your on-site registration.
+  - Space for transponder: keep a free, flat spot on the bottom of the car where the organizers can attach the lap-timing transponder.
 
 
 
@@ -177,7 +178,7 @@ With up to four cars on the track, the race is not paused when a car crashes. Vo
 
 ## Autonomous driving only
 
-- Cars MUST drive autonomously at all times during a race. Driving a car with the remote controller is not allowed at any point, not even to reset it after a crash: a crashed car is stopped with the kill-switch and carried by volunteers. Reversing a car under manual control into the path of the racing cars is exactly what this rule prevents.
+- Cars MUST drive autonomously at all times during a race. Driving a car with the remote controller is not allowed at any point, not even to reset it after a crash: a crashed car is stopped with the kill-switch and carried by volunteers. Reversing a car under manual control into the path of the racing cars is an example of what this rule prevents.
 - A car stopped by its Operator (see the yellow flag below) is restarted in autonomous mode.
 
 ## Crashes
@@ -185,7 +186,7 @@ With up to four cars on the track, the race is not paused when a car crashes. Vo
 - The Operator stops a crashed car with the kill-switch. Volunteers or team members, move it to the outside border of the track next to where it crashed, as close to the border as possible (for example, in a left turn, on the right-hand border).
 - The car(s) that caused the crash are placed behind the other cars involved. Reset cars are placed 1.5 m apart, the same spacing as the starting grid.
 - The car that was hit may be placed 1 m further forward. This is skipped when the cars are ready to restart right away, so that nobody is held up longer than necessary.
-- If several cars crash within 5 seconds of the first crash, they keep their order from before the crash, except that the at-fault car(s) go to the back.
+- If several cars crash, they keep their order from before the crash, except that the at-fault car(s) go to the back.
   - Example: car 2 crashes into car 1, and car 3 crashes into them as a result. Car 2 caused the crash, so the cars are placed in the order 1, 3, 2 (car 1 in front).
 - If the referees cannot tell which car is at fault, or all cars involved are at fault, the cars keep their order from before the crash.
 - A reset car restarts, in autonomous mode, after clearance from the organizers (a [green flag]({% link rules.md %}#green-flag) pointed at its Operator).
@@ -199,7 +200,7 @@ With up to four cars on the track, the race is not paused when a car crashes. Vo
 - While the flag is up, no car may overtake or pass in front of another car anywhere on the track. This includes lapped cars and cars being lapped.
 - Operators may stop their car with the kill-switch to keep it from overtaking, and restart it in autonomous mode.
 - Cars that reach the crash before it is cleared wait behind it.
-- The flag comes down once at least 5 seconds have passed since the crash and the crash scene is clear enough for cars to pass; the crashed cars do not need to be ready to restart. From then on, cars may drive past the crashed cars and overtaking is allowed again anywhere on the track.
+- The flag comes down once the crash scene is clear enough for cars to pass; the crashed cars do not need to be ready to restart. From then on, cars may drive past the crashed cars and overtaking is allowed again anywhere on the track.
 - The flag also comes down, or is not raised at all, when the crash is behind all the other cars by up to about half a lap: every other car has already passed the crash site and none is about to reach it again, so on a track this large there is nothing to protect them from and overtaking continues or resumes. If the crash is still not cleared by the time the cars come around to it again, the flag goes up again.
 - Both changes are announced over the speakers ("yellow flag raised, no overtaking" / "flag lowered, overtaking allowed"). No whistle is used.
 - Penalty for overtaking under the yellow flag: verbal warning. If it happens again, the team receives a formal warning (three warnings lead to disqualification, see the General Rules).
