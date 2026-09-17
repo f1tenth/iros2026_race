@@ -142,8 +142,16 @@ print(f"tubes if each run starts new: {len(tubes):3d}  ({full} full, {partial} p
 # ── draw ────────────────────────────────────────────────────────────────────
 fig, ax = plt.subplots(figsize=(RW/2.6, RH/2.6), dpi=200)
 try:
-    bg = plt.imread(BG)
-    ax.imshow(bg, extent=[0, RW, RH, 0], alpha=0.30, zorder=0)
+    from PIL import Image
+    bg = Image.open(BG).convert('RGB')
+    # the designer stores how the plan was turned under the track; match it,
+    # then stretch to the space exactly as the canvas does
+    rot = int(d.get('bg_rotation', 0)) % 360
+    if rot:
+        bg = bg.rotate(-rot, expand=True)     # PIL turns counter-clockwise
+    ax.imshow(bg, extent=[0, RW, RH, 0], zorder=0,
+              alpha=max(0.15, min(0.5, d.get('bg_opacity', 40) / 100.0)))
+    print(f"floor plan: {os.path.basename(BG)} rotated {rot} deg")
 except Exception as e:
     print("no floor plan:", e)
 
