@@ -1,5 +1,7 @@
 """Lay 25 ft tubes along the track walls, sharing one line where passes touch."""
 import json
+import os
+import sys
 import numpy as np
 from scipy.interpolate import Akima1DInterpolator
 import matplotlib
@@ -12,11 +14,28 @@ GAP = 0.50                      # two walls this close share one line of tubes
 MIN_SEP = 4.0                   # ...only if they are different parts of the lap
 N = 6000
 
-SRC = 'Utils/tracks/generated/17_09_2026_15_55_42.json'
 BG = 'Utils/tracks/floorplans/IROS_Floorplan_+_Indianapolis.png'
-OUT = 'Utils/tracks/tube_layout.png'
+
+def newest_track():
+    """The most recently written design: an export, or the live autosave."""
+    import glob, pathlib
+    cands = (glob.glob('Utils/tracks/generated/*.json')
+             + glob.glob('Utils/track_designer/*.json')
+             + glob.glob('*.json')
+             + glob.glob(str(pathlib.Path.home() / '.track_designer' / 'autosave.json')))
+    cands = [c for c in cands if 'points' in json.load(open(c))]
+    if not cands:
+        raise SystemExit("no track project found - pass one as an argument")
+    return max(cands, key=lambda c: pathlib.Path(c).stat().st_mtime)
+
+SRC = sys.argv[1] if len(sys.argv) > 1 else newest_track()
+OUT = ('Utils/tracks/tube_layout_'
+       + os.path.splitext(os.path.basename(SRC))[0] + '.png')
+print(f"track:  {SRC}")
 
 d = json.load(open(SRC))
+if d.get('background_path') and os.path.exists(d['background_path']):
+    BG = d['background_path']
 pts = np.array(d['points'], float)
 pw = np.array(d['point_widths'], float)
 RW, RH = d['real_width'], d['real_height']
