@@ -774,7 +774,7 @@
  "right_width": 1.0,
  "boundary_width": 0.1,
  "obstacle_radius": 0.3,
- "background_path": "/home/cedric/Documents/UPenn/xLAB/Roboracer/IROS2026/iros2026_race/Utils/track_designer/pics/IROS_Floorplan_+_Indianapolis.png",
+ "background_path": "Utils/tracks/floorplans/IROS_Floorplan_+_Indianapolis.png",
  "background_page": 0,
  "bg_opacity": 40,
  "bg_rotation": 90,
