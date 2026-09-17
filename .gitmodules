@@ -1,3 +1,6 @@
 [submodule "roboracer_rules"]
 	path = _includes/roboracer_rules
 	url = https://github.com/f1tenth/roboracer_rules.git
+[submodule "Utils/track_designer"]
+	path = Utils/track_designer
+	url = https://github.com/AhmadAmine998/track_designer.git
