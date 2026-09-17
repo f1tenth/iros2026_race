@@ -30,16 +30,16 @@
         "date_override": "",
         "description": "RoboRacer Orientation 1 (competition rules overview)",
         "zoom_link": "",
-        "slides_link": "",
-        "video_link": ""
+        "slides_link": "https://drive.google.com/drive/folders/1GnYVaX4jpJfuJDPgNH46nVT2bPhg3V3K?usp=sharing",
+        "video_link": "https://drive.google.com/drive/folders/1GnYVaX4jpJfuJDPgNH46nVT2bPhg3V3K?usp=sharing"
     },
     "orientation_2": {
-        "time_display": "11:00 AM - 12:00 PM ET",
+        "time_display": "3:00 PM - 4:00 PM ET",
         "date_override": "",
         "description": "RoboRacer Orientation 2 (venue walkthrough, track and surface overview, run-of-show)",
         "zoom_link": "",
-        "slides_link": "",
-        "video_link": ""
+        "slides_link": "https://drive.google.com/drive/folders/1GnYVaX4jpJfuJDPgNH46nVT2bPhg3V3K?usp=sharing",
+        "video_link": "https://drive.google.com/drive/folders/1GnYVaX4jpJfuJDPgNH46nVT2bPhg3V3K?usp=sharing"
     },
     "registration": {
         "status": "open",
@@ -48,7 +48,7 @@
         "hardware_list_form_link": "https://forms.gle/K4FCnzAVb3kbEF4KA",
         "hide_participants": true,
         "registration_open_date_override": "August 11th",
-        "registration_closes_date_override": "September 9th"
+        "registration_closes_date_override": "September 18th"
     },
     "results": {
         "time_trial_sheet_link": "",

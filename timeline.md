@@ -103,7 +103,10 @@ section: timeline
 <td class="tg-1vzr"><span
 style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">August 26th, 11:00 AM - 12:00 PM ET</span>
 </td>
-<td class="tg-j1gp"><span style="font-weight:inherit;font-style:inherit">RoboRacer Orientation 1 (competition rules overview)</span>
+<td class="tg-j1gp"><span style="font-weight:inherit;font-style:inherit">RoboRacer Orientation 1 (competition rules overview)</span><br>
+<span
+style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">
+<a href="https://drive.google.com/drive/folders/1GnYVaX4jpJfuJDPgNH46nVT2bPhg3V3K?usp=sharing">Slides &amp; Video</a></span>
 </td>
 </tr><!-- /TL_O1_ROW -->
 
@@ -117,7 +120,10 @@ style="font-weight:400;font-style:normal;text-decoration:none;color:#000;backgro
 		<!-- TL_O2_ROW --><tr>
 <td class="tg-tbri"><span
 style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">September 16th, 3:00 PM - 4:00 PM ET</span></td>
-<td class="tg-npj4"><span style="font-weight:400;font-style:normal">RoboRacer Orientation 2 (venue walkthrough, track and surface overview, run-of-show)</span>
+<td class="tg-npj4"><span style="font-weight:400;font-style:normal">RoboRacer Orientation 2 (venue walkthrough, track and surface overview, run-of-show)</span><br>
+<span
+style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">
+<a href="https://drive.google.com/drive/folders/1GnYVaX4jpJfuJDPgNH46nVT2bPhg3V3K?usp=sharing">Slides &amp; Video</a></span>
 </td>
 </tr><!-- /TL_O2_ROW -->
 

@@ -3851,14 +3851,18 @@ class RepositoryUpdater:
             # Drop the line entirely before the session has happened, otherwise the
             # row publishes a bare "Slide Video" with nothing to click.
             o1_resources = []
-            if o1_slides:
+            if o1_slides and o1_slides == o1_video:
+                # Slides and recording share one folder: link it once.
+                o1_resources.append(f'<a href="{o1_slides}">Slides &amp; Video</a>')
+            elif o1_slides:
                 o1_resources.append(f'<a href="{o1_slides}">Slide</a>')
             elif o1_video:
                 o1_resources.append('Slide')
-            if o1_video:
-                o1_resources.append(f'<a href="{o1_video}">Video</a>')
-            elif o1_slides:
-                o1_resources.append('Video')
+            if o1_slides != o1_video:
+                if o1_video:
+                    o1_resources.append(f'<a href="{o1_video}">Video</a>')
+                elif o1_slides:
+                    o1_resources.append('Video')
             if o1_resources:
                 o1_resources_html = f'''<br>
 								<span
@@ -3926,14 +3930,18 @@ class RepositoryUpdater:
 
             # Build slide/video links - only show as links if URLs are provided
             o2_resources = []
-            if o2_slides:
+            if o2_slides and o2_slides == o2_video:
+                # Slides and recording share one folder: link it once.
+                o2_resources.append(f'<a href="{o2_slides}">Slides &amp; Video</a>')
+            elif o2_slides:
                 o2_resources.append(f'<a href="{o2_slides}">Slide</a>')
             elif o2_video:
                 o2_resources.append('Slide')
-            if o2_video:
-                o2_resources.append(f'<a href="{o2_video}">Video</a>')
-            elif o2_slides:
-                o2_resources.append('Video')
+            if o2_slides != o2_video:
+                if o2_video:
+                    o2_resources.append(f'<a href="{o2_video}">Video</a>')
+                elif o2_slides:
+                    o2_resources.append('Video')
             if o2_resources:
                 o2_resources_html = f'''<br>
 								<span
@@ -4219,27 +4227,35 @@ class RepositoryUpdater:
 
         return content
 
-    def _update_orientation1_html(self, content: str) -> str:
-        """Update orientation_1.html using placeholder markers."""
-        slides_link = self.o1.get("slides_link", "")
-        video_link = self.o1.get("video_link", "")
+    def _orientation_content(self, number: int, cfg: dict) -> str:
+        """Slides/video block of an orientation page.
 
-        # Generate full content block
-        o1_content = self._clean_html(f'''<h3> Orientation 1 Slides </h3>
+        When slides and recording sit in one Google Drive folder, the folder is
+        linked and embedded through the folder view: drive.google.com/drive/folders
+        refuses to load inside an iframe.
+        """
+        slides_link = cfg.get("slides_link", "")
+        video_link = cfg.get("video_link", "")
+        folder = re.search(r"drive\.google\.com/drive/folders/([\w-]+)", slides_link)
+        if folder and slides_link == video_link:
+            return self._clean_html(f'''<h3> Orientation {number} Slides and Video Recording </h3>
+						<p><a href="{slides_link}">Open the orientation folder on Google Drive</a></p>
+						<iframe src="https://drive.google.com/embeddedfolderview?id={folder.group(1)}#list" frameborder="0" width="960" height="400"></iframe>''')
+        return self._clean_html(f'''<h3> Orientation {number} Slides </h3>
 						<iframe src="{slides_link}" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true"
 							webkitallowfullscreen="true"></iframe>
 
-						<h3> Orientation 1 Video Recording</h3>
+						<h3> Orientation {number} Video Recording</h3>
 						<iframe src="{video_link}" width="640" height="480" allow="autoplay"></iframe>''')
-        content = self.replace_placeholder(content, "O1_CONTENT", o1_content)
 
-        return content
+    def _update_orientation1_html(self, content: str) -> str:
+        """Update orientation_1.html using placeholder markers."""
+        return self.replace_placeholder(content, "O1_CONTENT", self._orientation_content(1, self.o1))
 
     def _update_orientation2_html(self, content: str) -> str:
         """Update orientation_2.html using placeholder markers."""
         # The CONF_WITH_YEAR placeholder is already handled in the common section
-        # O2_CONTENT can be updated when slides/video are available
-        return content
+        return self.replace_placeholder(content, "O2_CONTENT", self._orientation_content(2, self.o2))
 
     def _update_page_layout_html(self, content: str) -> str:
         """Update _layouts/page.html using placeholder markers."""
@@ -4277,14 +4293,18 @@ class RepositoryUpdater:
             o2_slides = self.o2.get("slides_link", "")
             o2_video = self.o2.get("video_link", "")
 
-            if o1_slides:
-                orientation_lines.append(f"\n- [Orientation 1 Meeting Slides]({o1_slides})")
-            if o1_video:
-                orientation_lines.append(f"- [Orientation 1 Recording]({o1_video})")
-            if o2_slides:
-                orientation_lines.append(f"- [Orientation 2 Meeting Slides]({o2_slides})")
-            if o2_video:
-                orientation_lines.append(f"- [Orientation 2 Recording]({o2_video})")
+            if o1_slides and o1_slides == o1_video == o2_slides == o2_video:
+                # Slides and recordings of both sessions share one folder.
+                orientation_lines.append(f"\n- [Orientation Slides and Recordings]({o1_slides})")
+            else:
+                if o1_slides:
+                    orientation_lines.append(f"\n- [Orientation 1 Meeting Slides]({o1_slides})")
+                if o1_video:
+                    orientation_lines.append(f"- [Orientation 1 Recording]({o1_video})")
+                if o2_slides:
+                    orientation_lines.append(f"- [Orientation 2 Meeting Slides]({o2_slides})")
+                if o2_video:
+                    orientation_lines.append(f"- [Orientation 2 Recording]({o2_video})")
 
             orientation_content = "\n".join(orientation_lines)
             content = self.replace_placeholder(content, "ORIENTATION_LINKS", orientation_content)

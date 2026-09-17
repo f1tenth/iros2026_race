@@ -9,9 +9,7 @@ section: race
 </center>
 
 <center>
-	<!-- O2_CONTENT --><h3>Orientation 2 Slides</h3>
-	<iframe src="" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-
-	<h3>Orientation 2 Video Recording</h3>
-	<iframe src="" width="640" height="480" allow="autoplay"></iframe><!-- /O2_CONTENT -->
+	<!-- O2_CONTENT --><h3> Orientation 2 Slides and Video Recording </h3>
+<p><a href="https://drive.google.com/drive/folders/1GnYVaX4jpJfuJDPgNH46nVT2bPhg3V3K?usp=sharing">Open the orientation folder on Google Drive</a></p>
+<iframe src="https://drive.google.com/embeddedfolderview?id=1GnYVaX4jpJfuJDPgNH46nVT2bPhg3V3K#list" frameborder="0" width="960" height="400"></iframe><!-- /O2_CONTENT -->
 </center>
