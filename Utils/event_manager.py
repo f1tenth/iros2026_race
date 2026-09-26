@@ -4046,6 +4046,8 @@ class RepositoryUpdater:
                 sch_cfg.get("groups", {}), display
             )
             csv_path = sch_cfg.get("csv_path", "")
+            if csv_path and not Path(csv_path).is_absolute():
+                csv_path = SCRIPT_DIR / csv_path
             rows = []
             if csv_path and Path(csv_path).exists():
                 rows = sched.load_schedule_csv(csv_path)
@@ -4053,7 +4055,8 @@ class RepositoryUpdater:
                 rows, sch_cfg.get("timezone_label", "ET"), days=sch_cfg.get("days", [])
             )
             body = "\n\n".join(p for p in (groups_md, schedule_md) if p)
-            block = f"\n{body}\n" if body else ""
+            # Blank line before the closing marker, or kramdown won't end the last table.
+            block = f"\n{body}\n\n" if body else ""
             return self.replace_placeholder(content, "SCHEDULE", block)
         except Exception:
             return content

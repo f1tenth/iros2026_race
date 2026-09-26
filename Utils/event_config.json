@@ -202,7 +202,7 @@
     },
     "schedule": {
         "timezone_label": "ET",
-        "csv_path": "",
+        "csv_path": "schedule.csv",
         "group_size": 4,
         "groups": {},
         "days": []
