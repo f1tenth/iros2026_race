@@ -15,4 +15,5 @@ simulation environments and track data will be displayed here.
 - [Orientation Slides and Recordings](https://drive.google.com/drive/folders/1GnYVaX4jpJfuJDPgNH46nVT2bPhg3V3K?usp=sharing)<!-- /ORIENTATION_LINKS -->
 <!-- EXTRA_RESOURCES -->
 - [Setting up f1tenth_gym_ros with 4 cars]({% link multi_car_sim.md %})
+- <details><summary style="display:list-item;cursor:pointer;"><strong>Track Layout</strong> (click to preview) - download map: <a href="{% link assets/maps/IROS2026.png %}" download>PNG</a> | <a href="{% link assets/maps/IROS2026.yaml %}" download>YAML</a></summary><img src="{% link assets/maps/IROS2026.png %}" alt="IROS 2026 track map" style="max-width:100%;margin-top:0.5em;border:1px solid #ccc;"></details>
 <!-- /EXTRA_RESOURCES -->

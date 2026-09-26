@@ -176,7 +176,7 @@
             "image": "images/organizer/WenshanWang.jpeg"
         }
     ],
-    "extra_resources": "\n- [Setting up f1tenth_gym_ros with 4 cars]({% link multi_car_sim.md %})",
+    "extra_resources": "\n- [Setting up f1tenth_gym_ros with 4 cars]({% link multi_car_sim.md %})\n- <details><summary style=\"display:list-item;cursor:pointer;\"><strong>Track Layout</strong> (click to preview) - download map: <a href=\"{% link assets/maps/IROS2026.png %}\" download>PNG</a> | <a href=\"{% link assets/maps/IROS2026.yaml %}\" download>YAML</a></summary><img src=\"{% link assets/maps/IROS2026.png %}\" alt=\"IROS 2026 track map\" style=\"max-width:100%;margin-top:0.5em;border:1px solid #ccc;\"></details>",
     "certification": {
         "csv_paths": {
             "registration": "",
