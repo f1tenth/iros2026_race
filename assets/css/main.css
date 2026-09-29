@@ -2677,6 +2677,38 @@ input, select, textarea {
 			transform: scale(1.05);
 		}
 
+/* Sponsors */
+
+	.sponsor-logos {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		gap: clamp(1rem, 3vw, 3rem);
+	}
+
+	.sponsor-logos + .sponsor-logos {
+		margin-top: 2rem;
+	}
+
+	.sponsor-logo {
+		border: 0;
+		display: block;
+		width: 22vw;
+		min-width: 0;
+		max-width: 100%;
+	}
+
+	.sponsor-logo-featured {
+		width: 35vw;
+	}
+
+	.sponsor-logo img {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+
 /* Actions */
 
 	ul.actions {
