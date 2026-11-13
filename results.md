@@ -51,7 +51,7 @@ Nine teams raced in the 4-car head-to-head knockout at IROS 2026 in Pittsburgh. 
 <tr>
 <td>6th</td>
 <td>Tartan Racing</td>
-<td>Vaibhav Parekh, Johnny Tian, Dhruv Jaiswal</td>
+<td>Dhruv Jaiswal, Johnny Tian</td>
 </tr>
 <tr>
 <td>7th</td>
