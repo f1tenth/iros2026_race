@@ -1,0 +1,65 @@
+---
+title: Photos and Videos
+short_title: Photos
+layout: page
+section: photos
+---
+{% assign g = site.data.gallery %}
+{% assign base = g.base_url %}
+<link rel="stylesheet" href="{% link assets/css/gallery.css %}" />
+
+<div class="rr-gallery">
+
+<p class="rr-gallery-intro">
+Moments from the 31st RoboRacer Autonomous Racing Competition at IROS 2026 in Pittsburgh.
+Click any photo or video to view it. Every item can be downloaded in its original, full quality.
+</p>
+
+<p class="rr-gallery-actions">
+<a href="{{ base }}/{{ g.zip.file }}" class="button icon solid fa-download" download="{{ g.zip.file }}">All photos (.zip, {{ g.zip.size_mb }} MB)</a>
+</p>
+
+<h3 id="videos">Videos</h3>
+
+<div class="rr-gallery-grid is-videos">
+{% for v in g.videos %}{% assign poster = '/images/gallery/video/' | append: v.stem | append: '_poster.jpg' | relative_url %}
+<figure class="rr-gallery-item">
+<a class="rr-gallery-open" href="{{ base }}/videos/{{ v.file }}"
+   data-type="video" data-full="{{ base }}/videos/{{ v.file }}" data-download="{{ base }}/videos/{{ v.file }}"
+   data-poster="{{ poster }}" data-name="{{ v.file }}" data-size="{{ v.size_mb }} MB"
+   aria-label="Play video {{ forloop.index }} ({{ v.duration }})">
+<video muted loop playsinline autoplay preload="metadata" poster="{{ poster }}" aria-hidden="true" tabindex="-1">
+<source src="{{ '/images/gallery/video/' | append: v.stem | append: '_preview.mp4' | relative_url }}" type="video/mp4" />
+</video>
+</a>
+<span class="rr-gallery-badge">&#9654; {{ v.duration }}</span>
+<a class="rr-gallery-dl icon solid fa-download" href="{{ base }}/videos/{{ v.file }}" download="{{ v.file }}"
+   title="Download original video ({{ v.size_mb }} MB)"><span class="label">Download {{ v.file }}</span></a>
+</figure>
+{% endfor %}
+</div>
+
+<h3 id="photos">Photos</h3>
+
+<div class="rr-gallery-grid">
+{% for p in g.photos %}
+<figure class="rr-gallery-item">
+<a class="rr-gallery-open" href="{{ base }}/photos/view/{{ p.file }}"
+   data-type="photo" data-full="{{ base }}/photos/view/{{ p.file }}" data-download="{{ base }}/photos/original/{{ p.file }}"
+   data-name="{{ p.file }}" data-size="{{ p.size_mb }} MB" data-alt="RoboRacer at IROS 2026, photo {{ forloop.index }}">
+<img src="{{ '/images/gallery/thumbs/' | append: p.file | relative_url }}" alt="RoboRacer at IROS 2026, photo {{ forloop.index }}"
+     loading="lazy" decoding="async" width="{{ p.w }}" height="{{ p.h }}" />
+</a>
+<a class="rr-gallery-dl icon solid fa-download" href="{{ base }}/photos/original/{{ p.file }}" download="{{ p.file }}"
+   title="Download original ({{ p.size_mb }} MB)"><span class="label">Download {{ p.file }}</span></a>
+</figure>
+{% endfor %}
+</div>
+
+<p class="rr-gallery-credit">
+Photos 1 to 40 by Caught in the Moment for IEEE IROS 2026. Other photos and videos by the RoboRacer team.
+</p>
+
+</div>
+
+<script src="{% link assets/js/gallery.js %}" defer></script>

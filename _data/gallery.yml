@@ -1,0 +1,200 @@
+# Event gallery. Thumbnails and video loops live in images/gallery/;
+# full-size views, untouched originals and full videos are served from Cloudflare R2.
+base_url: https://pub-1174c726236842f08529a0a5cc0c68fb.r2.dev/media/iros2026
+zip:
+  file: RoboRacer_IROS_2026_Photos.zip
+  size_mb: 199
+videos:
+  - file: RoboRacer_IROS_Video_01.mp4
+    stem: RoboRacer_IROS_Video_01
+    duration: "8:17"
+    size_mb: 105
+  - file: RoboRacer_IROS_Video_02.mp4
+    stem: RoboRacer_IROS_Video_02
+    duration: "0:28"
+    size_mb: 6.0
+  - file: RoboRacer_IROS_Video_03.mp4
+    stem: RoboRacer_IROS_Video_03
+    duration: "3:40"
+    size_mb: 46
+photos:
+  - file: RoboRacer_IROS_001.jpg
+    w: 2000
+    h: 1333
+    size_mb: 4.9
+  - file: RoboRacer_IROS_002.jpg
+    w: 2000
+    h: 1333
+    size_mb: 5.3
+  - file: RoboRacer_IROS_003.jpg
+    w: 2000
+    h: 1333
+    size_mb: 3.8
+  - file: RoboRacer_IROS_004.jpg
+    w: 2000
+    h: 1333
+    size_mb: 4.2
+  - file: RoboRacer_IROS_005.jpg
+    w: 2000
+    h: 1333
+    size_mb: 3.2
+  - file: RoboRacer_IROS_006.jpg
+    w: 2000
+    h: 1333
+    size_mb: 4.3
+  - file: RoboRacer_IROS_007.jpg
+    w: 2000
+    h: 1333
+    size_mb: 4.6
+  - file: RoboRacer_IROS_008.jpg
+    w: 2000
+    h: 1333
+    size_mb: 4.9
+  - file: RoboRacer_IROS_009.jpg
+    w: 2000
+    h: 1333
+    size_mb: 4.8
+  - file: RoboRacer_IROS_010.jpg
+    w: 2000
+    h: 1333
+    size_mb: 4.5
+  - file: RoboRacer_IROS_011.jpg
+    w: 2000
+    h: 1333
+    size_mb: 4.7
+  - file: RoboRacer_IROS_012.jpg
+    w: 2000
+    h: 1333
+    size_mb: 4.5
+  - file: RoboRacer_IROS_013.jpg
+    w: 2000
+    h: 1333
+    size_mb: 4.8
+  - file: RoboRacer_IROS_014.jpg
+    w: 2000
+    h: 1333
+    size_mb: 3.8
+  - file: RoboRacer_IROS_015.jpg
+    w: 2000
+    h: 1333
+    size_mb: 4.2
+  - file: RoboRacer_IROS_016.jpg
+    w: 2000
+    h: 1333
+    size_mb: 5.6
+  - file: RoboRacer_IROS_017.jpg
+    w: 2000
+    h: 1333
+    size_mb: 6.1
+  - file: RoboRacer_IROS_018.jpg
+    w: 2000
+    h: 1333
+    size_mb: 5.8
+  - file: RoboRacer_IROS_019.jpg
+    w: 2000
+    h: 1333
+    size_mb: 5.6
+  - file: RoboRacer_IROS_020.jpg
+    w: 2000
+    h: 1333
+    size_mb: 5.7
+  - file: RoboRacer_IROS_021.jpg
+    w: 2000
+    h: 1333
+    size_mb: 5.6
+  - file: RoboRacer_IROS_022.jpg
+    w: 2000
+    h: 1333
+    size_mb: 5.5
+  - file: RoboRacer_IROS_023.jpg
+    w: 2000
+    h: 1333
+    size_mb: 5.8
+  - file: RoboRacer_IROS_024.jpg
+    w: 2000
+    h: 1333
+    size_mb: 5.0
+  - file: RoboRacer_IROS_025.jpg
+    w: 2000
+    h: 1333
+    size_mb: 4.8
+  - file: RoboRacer_IROS_026.jpg
+    w: 2000
+    h: 1333
+    size_mb: 5.0
+  - file: RoboRacer_IROS_027.jpg
+    w: 1333
+    h: 2000
+    size_mb: 5.1
+  - file: RoboRacer_IROS_028.jpg
+    w: 2000
+    h: 1333
+    size_mb: 5.4
+  - file: RoboRacer_IROS_029.jpg
+    w: 2000
+    h: 1333
+    size_mb: 4.7
+  - file: RoboRacer_IROS_030.jpg
+    w: 2000
+    h: 1333
+    size_mb: 5.2
+  - file: RoboRacer_IROS_031.jpg
+    w: 2000
+    h: 1333
+    size_mb: 5.1
+  - file: RoboRacer_IROS_032.jpg
+    w: 2000
+    h: 1333
+    size_mb: 4.4
+  - file: RoboRacer_IROS_033.jpg
+    w: 2000
+    h: 1333
+    size_mb: 4.8
+  - file: RoboRacer_IROS_034.jpg
+    w: 2000
+    h: 1333
+    size_mb: 5.0
+  - file: RoboRacer_IROS_035.jpg
+    w: 2000
+    h: 1333
+    size_mb: 5.0
+  - file: RoboRacer_IROS_036.jpg
+    w: 2000
+    h: 1333
+    size_mb: 5.1
+  - file: RoboRacer_IROS_037.jpg
+    w: 2000
+    h: 1333
+    size_mb: 5.2
+  - file: RoboRacer_IROS_038.jpg
+    w: 2000
+    h: 1333
+    size_mb: 5.2
+  - file: RoboRacer_IROS_039.jpg
+    w: 2000
+    h: 1333
+    size_mb: 5.1
+  - file: RoboRacer_IROS_040.jpg
+    w: 2000
+    h: 1333
+    size_mb: 4.6
+  - file: RoboRacer_IROS_041.jpg
+    w: 1600
+    h: 1200
+    size_mb: 0.3
+  - file: RoboRacer_IROS_042.jpg
+    w: 1600
+    h: 1200
+    size_mb: 0.3
+  - file: RoboRacer_IROS_043.jpg
+    w: 1600
+    h: 1200
+    size_mb: 0.3
+  - file: RoboRacer_IROS_044.jpg
+    w: 1600
+    h: 1200
+    size_mb: 0.3
+  - file: RoboRacer_IROS_045.jpg
+    w: 1600
+    h: 1200
+    size_mb: 0.3

@@ -1,0 +1,303 @@
+/* Event photo and video gallery (photos.html). Everything is namespaced under
+   .rr-gallery / .rr-lb so the theme's global link and button styles stay out. */
+
+.rr-gallery-intro {
+	text-align: center;
+	margin-bottom: 1.5rem;
+}
+
+.rr-gallery-actions {
+	text-align: center;
+	margin-bottom: 3rem;
+}
+
+.rr-gallery h3 {
+	margin: 2.5rem 0 1rem 0;
+}
+
+.rr-gallery-grid {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 10px;
+	margin: 0 0 2rem 0;
+}
+
+.rr-gallery-item {
+	position: relative;
+	margin: 0;
+	overflow: hidden;
+	border-radius: 4px;
+	background: #e9ecef;
+	aspect-ratio: 3 / 2;
+}
+
+.rr-gallery-grid.is-videos .rr-gallery-item {
+	aspect-ratio: 16 / 9;
+	background: #111;
+}
+
+.rr-gallery-item a.rr-gallery-open {
+	display: block;
+	width: 100%;
+	height: 100%;
+	border: 0;
+	cursor: zoom-in;
+}
+
+.rr-gallery-item img,
+.rr-gallery-item video {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 0.35s ease;
+}
+
+.rr-gallery-item:hover img,
+.rr-gallery-item:hover video,
+.rr-gallery-item a.rr-gallery-open:focus-visible img,
+.rr-gallery-item a.rr-gallery-open:focus-visible video {
+	transform: scale(1.04);
+}
+
+.rr-gallery-item a.rr-gallery-open:focus-visible {
+	outline: 3px solid #18bfef;
+	outline-offset: -3px;
+}
+
+/* Play badge on video tiles */
+.rr-gallery-badge {
+	position: absolute;
+	left: 8px;
+	bottom: 8px;
+	padding: 0.2rem 0.55rem;
+	border-radius: 999px;
+	background: rgba(0, 0, 0, 0.65);
+	color: #fff;
+	font-size: 0.7rem;
+	font-weight: 700;
+	letter-spacing: 0.04em;
+	line-height: 1.5;
+	pointer-events: none;
+}
+
+/* Per-item download button */
+.rr-gallery-item a.rr-gallery-dl {
+	position: absolute;
+	right: 8px;
+	bottom: 8px;
+	width: 2.1rem;
+	height: 2.1rem;
+	border: 0;
+	border-radius: 50%;
+	background: rgba(0, 0, 0, 0.65);
+	color: #fff !important;
+	font-size: 0.8rem;
+	line-height: 2.1rem;
+	text-align: center;
+	opacity: 0;
+	transition: opacity 0.2s ease, background-color 0.2s ease;
+}
+
+.rr-gallery-item:hover a.rr-gallery-dl,
+.rr-gallery-item a.rr-gallery-dl:focus-visible {
+	opacity: 1;
+}
+
+.rr-gallery-item a.rr-gallery-dl:hover {
+	background: #18bfef;
+}
+
+/* No hover on touch screens: keep the download button visible. */
+@media (hover: none) {
+	.rr-gallery-item a.rr-gallery-dl {
+		opacity: 1;
+	}
+}
+
+.rr-gallery-credit {
+	text-align: center;
+	color: #717981;
+	font-size: 0.85rem;
+	margin-top: 2rem;
+}
+
+@media screen and (max-width: 980px) {
+	.rr-gallery-grid {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.rr-gallery-grid {
+		gap: 6px;
+	}
+
+	.rr-gallery-grid.is-videos {
+		grid-template-columns: minmax(0, 1fr);
+	}
+}
+
+/* ---------- Lightbox ---------- */
+
+.rr-lb {
+	position: fixed;
+	inset: 0;
+	z-index: 10000;
+	display: flex;
+	flex-direction: column;
+	background: rgba(10, 12, 15, 0.96);
+	color: #fff;
+}
+
+.rr-lb[hidden] {
+	display: none;
+}
+
+.rr-lb-bar {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	padding: 0.6rem 0.9rem;
+	font-size: 0.8rem;
+	flex: 0 0 auto;
+}
+
+.rr-lb-count {
+	font-weight: 700;
+	white-space: nowrap;
+}
+
+.rr-lb-name {
+	flex: 1 1 auto;
+	min-width: 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	color: rgba(255, 255, 255, 0.7);
+}
+
+.rr-lb a.rr-lb-download {
+	flex: 0 0 auto;
+	padding: 0.45rem 0.9rem;
+	border: 0;
+	border-radius: 999px;
+	background: #fff;
+	color: #111 !important;
+	font-weight: 700;
+	white-space: nowrap;
+}
+
+.rr-lb a.rr-lb-download:hover {
+	background: #18bfef;
+	color: #fff !important;
+}
+
+.rr-lb a.rr-lb-download:before {
+	margin-right: 0.4rem;
+}
+
+.rr-lb button.rr-lb-btn {
+	flex: 0 0 auto;
+	width: 2.6rem;
+	height: 2.6rem;
+	padding: 0;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.12);
+	box-shadow: none !important;
+	color: #fff !important;
+	font-family: inherit;
+	font-size: 1.5rem;
+	font-weight: 400;
+	letter-spacing: 0;
+	line-height: 2.6rem;
+	text-transform: none;
+}
+
+.rr-lb button.rr-lb-btn:hover,
+.rr-lb button.rr-lb-btn:focus-visible {
+	background: rgba(255, 255, 255, 0.28);
+	outline: none;
+}
+
+.rr-lb-stage {
+	position: relative;
+	flex: 1 1 auto;
+	min-height: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0 0.5rem 1rem 0.5rem;
+}
+
+.rr-lb-media {
+	max-width: 100%;
+	max-height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.rr-lb-media img,
+.rr-lb-media video {
+	display: block;
+	max-width: 100%;
+	max-height: calc(100vh - 5.5rem);
+	width: auto;
+	height: auto;
+	border-radius: 3px;
+	background: #000;
+}
+
+/* Videos are 16:9; let them fill the stage instead of sitting at poster size. */
+.rr-lb-media video {
+	width: min(calc(100vw - 1rem), calc((100vh - 5.5rem) * 16 / 9), 1280px);
+	aspect-ratio: 16 / 9;
+}
+
+.rr-lb button.rr-lb-nav {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 1;
+}
+
+.rr-lb button.rr-lb-prev {
+	left: 0.75rem;
+}
+
+.rr-lb button.rr-lb-next {
+	right: 0.75rem;
+}
+
+@media screen and (max-width: 736px) {
+	.rr-lb-name {
+		display: none;
+	}
+
+	.rr-lb-count {
+		flex: 1 1 auto;
+	}
+
+	.rr-lb button.rr-lb-nav {
+		top: auto;
+		bottom: 0.75rem;
+		transform: none;
+	}
+}
+
+body.rr-lb-open {
+	overflow: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.rr-gallery-item img,
+	.rr-gallery-item video {
+		transition: none;
+	}
+
+	.rr-gallery-item:hover img,
+	.rr-gallery-item:hover video {
+		transform: none;
+	}
+}

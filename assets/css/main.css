@@ -3746,7 +3746,16 @@ input, select, textarea {
 					display: block;
 					font-size: 0.8rem;
 					outline: none;
-					padding: 0 1rem;
+					padding: 0 0.7rem;
+					white-space: nowrap;
+				}
+
+				@media screen and (max-width: 1100px) {
+
+					#nav ul.links li a {
+						padding: 0 0.5rem;
+					}
+
 				}
 
 					#nav ul.links li a:hover {
