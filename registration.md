@@ -34,8 +34,8 @@ registration closes; see the <a href="{% link timeline.md %}">Timeline</a> for t
 </p>
 
 <center class="actions">
-<a href="https://forms.gle/EhJ85RDMCjWvdJmL7" class="button">Submit Video</a>
-<a href="https://forms.gle/GFDcLBNNeDUVRNkNA" class="button">Submit Hardware List</a>
+<a class="button" style="pointer-events: none; opacity: 0.5;">Submit Video</a>
+<a class="button" style="pointer-events: none; opacity: 0.5;">Submit Hardware List</a>
 </center>
 
 <br>
