@@ -1,32 +1,76 @@
 ---
+title: Results
 short_title: Results
 layout: page
-section: stream
+section: results
 ---
-<center>
-<h2 id="virtual-results"> LIVE STREAM </h2>
+<!-- RESULTS_PLACEHOLDER --><!-- /RESULTS_PLACEHOLDER -->
 
-<script src="https://player.twitch.tv/js/embed/v1.js"></script>
+<h3 id="final-standings">Final Standings</h3>
 
-<div id="1"></div>
-<script type="text/javascript">
-    var options = {
-        width: 854,
-        height: 480,
-        channel: "roboracer_ai",
-        // video: "<video ID>",
-        // collection: "<collection ID>",
-        parent: <!-- TWITCH_PARENTS -->["iros2026-race.roboracer.ai", "localhost"]<!-- /TWITCH_PARENTS -->
-    };
-    var player = new Twitch.Player("1", options);
-    player.setVolume(0.5);
-</script>
+<p>
+Nine teams raced in the 4-car head-to-head knockout at IROS 2026 in Pittsburgh. Congratulations to
+<strong>CarBonara</strong>, winners of the 31st RoboRacer Autonomous Racing Competition, and thank you to every team that took part.
+</p>
 
-<!-- STREAM_PLACEHOLDER --><p style="color: #888; font-style: italic;">Live stream will appear here during the event.</p><!-- /STREAM_PLACEHOLDER -->
-
-<h2 id="virtual-results"> RESULTS </h2>
-
-<!-- RESULTS_PLACEHOLDER --><p style="color: #888; font-style: italic;">Results will be posted after the competition.</p><!-- /RESULTS_PLACEHOLDER -->
+<div class="table-wrapper">
+<table class="results-table">
+<thead>
+<tr>
+<th style="text-align: left">PLACE</th>
+<th style="text-align: left">TEAM</th>
+<th style="text-align: left">TEAM MEMBERS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="white-space: nowrap">&#129351; 1st</td>
+<td><strong>CarBonara</strong></td>
+<td>Aniket Datar, Francesco Cancelliere, Alexandyr</td>
+</tr>
+<tr>
+<td style="white-space: nowrap">&#129352; 2nd</td>
+<td><strong>Fireball</strong></td>
+<td>Aniket Datar, Francesco Cancelliere, Alexandyr</td>
+</tr>
+<tr>
+<td style="white-space: nowrap">&#129353; 3rd</td>
+<td><strong>Mountaineers 1</strong></td>
+<td>Evan Anderson, Blake Buskirk, Andrew Sarver, Mohamed Elgouhary</td>
+</tr>
+<tr>
+<td>4th</td>
+<td>Team 3</td>
+<td>Avani Narula, Ethan Sanchez</td>
+</tr>
+<tr>
+<td>5th</td>
+<td>Mountaineers 2</td>
+<td>Evan Anderson, Blake Buskirk, Andrew Sarver, Mohamed Elgouhary</td>
+</tr>
+<tr>
+<td>6th</td>
+<td>Tartan Racing</td>
+<td>Vaibhav Parekh, Johnny Tian, Dhruv Jaiswal</td>
+</tr>
+<tr>
+<td>7th</td>
+<td>Slip Stream</td>
+<td>Mann Bhanushali, Jilu Wang</td>
+</tr>
+<tr>
+<td>8th</td>
+<td>UNICS</td>
+<td>Sohom Sen, Zhihao Ren, Mateusz Gawel, Daniel Qu, Ziqian Zheng, Daniel Choi</td>
+</tr>
+<tr>
+<td>9th</td>
+<td>Boiler Autonomy</td>
+<td>Jayesh Milind Fasate</td>
+</tr>
+</tbody>
+</table>
+</div>
 
 <!-- TIME_TRIAL_SECTION --><!-- /TIME_TRIAL_SECTION -->
 
@@ -34,4 +78,6 @@ section: stream
 
 <!-- BRACKET_EMBED --><!-- /BRACKET_EMBED -->
 
+<center class="actions">
+<a href="{% link photos.html %}" class="button">Photos and Videos</a>
 </center>

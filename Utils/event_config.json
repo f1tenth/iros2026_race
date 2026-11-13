@@ -42,7 +42,7 @@
         "video_link": "https://drive.google.com/drive/folders/1GnYVaX4jpJfuJDPgNH46nVT2bPhg3V3K?usp=sharing"
     },
     "registration": {
-        "status": "open",
+        "status": "closed",
         "form_link": "https://forms.gle/nhDytwxKEy4EpUHa6",
         "video_demo_form_link": "https://forms.gle/uRoVUoV2ihu6PQuK8",
         "hardware_list_form_link": "https://forms.gle/K4FCnzAVb3kbEF4KA",
@@ -60,9 +60,9 @@
             "iros2026-race.roboracer.ai",
             "localhost"
         ],
-        "show_stream_placeholder": true,
+        "show_stream_placeholder": false,
         "stream_placeholder_text": "Live stream will appear here during the event.",
-        "show_results_placeholder": true,
+        "show_results_placeholder": false,
         "results_placeholder_text": "Results will be posted after the competition."
     },
     "sim_racing": {

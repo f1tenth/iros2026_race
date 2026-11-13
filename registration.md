@@ -19,7 +19,7 @@ With the discount code emailed to registered teams, the IROS rate is $300 per pe
 </p><!-- /REG_INFO_PARAGRAPH -->
 
 <center class="actions">
-<!-- REG_BUTTON --><a href="https://forms.gle/nhDytwxKEy4EpUHa6" class="button">Registration Open</a><!-- /REG_BUTTON -->
+<!-- REG_BUTTON --><a class="button" style="pointer-events: none; opacity: 0.5;">Registration Closed</a><!-- /REG_BUTTON -->
 </center>
 
 <br>
